@@ -31,8 +31,8 @@ export default {
     // every component will use this.$questionHub to access the event bus
     Vue.prototype.$signalrHub = signalrHub
     // Forward server side SignalR events through $questionHub, where components will listen to them
-    connection.on('ReceiveMessage', (data) => {
-      signalrHub.$emit('ReceiveMessage', data)
+    connection.on('On_Node_Connection_Changed', (data) => {
+      signalrHub.$emit('On_Node_Connection_Changed', data)
     })
     connection.on('UserConnected', (data) => {
       signalrHub.$emit('UserConnected', data)

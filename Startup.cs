@@ -5,6 +5,7 @@ using Microsoft.AspNetCore.SpaServices.Webpack;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using sandalphon.Providers;
+using System;
 
 namespace sandalphon
 {
@@ -13,6 +14,7 @@ namespace sandalphon
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
+            
         }
 
         public IConfiguration Configuration { get; }
@@ -21,6 +23,7 @@ namespace sandalphon
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddSignalR();
+            services.AddTransient<GlobalHubServer<SignalRHub>>();
             // Add framework services.
             services.AddMvc()
                 .SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
@@ -28,10 +31,19 @@ namespace sandalphon
             // Simple example with dependency injection for a data provider.
             services.AddSingleton<IWeatherProvider, WeatherProviderFake>();
         }
-
+        public static GlobalHubServer<SignalRHub> GlobalHub { get; private set; }
+        public static ControlHub GlobalControl { get; private set; }
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env)
+        public void Configure(IApplicationBuilder app, IHostingEnvironment env, IServiceProvider serviceProvider)
         {
+            GlobalHub = serviceProvider.GetService<GlobalHubServer<SignalRHub>>();
+            lock (GlobalHub)
+            {
+                if (GlobalControl == null)
+                {
+                    GlobalControl = new ControlHub();
+                }
+            }
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
@@ -67,6 +79,7 @@ namespace sandalphon
                     name: "spa-fallback",
                     defaults: new { controller = "Home", action = "Index" });
             });
+            
         }
     }
 }

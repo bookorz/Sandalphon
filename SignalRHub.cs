@@ -8,7 +8,11 @@ namespace sandalphon
 {
     public class SignalRHub : Hub
     {
-
+        private readonly GlobalHubServer<SignalRHub> _hubMethods;
+        public SignalRHub(GlobalHubServer<SignalRHub> hubMethods)
+        {
+            _hubMethods = hubMethods;
+        }
         public Task SendMessageToAll(string message)
         {
             return Clients.All.SendAsync("ReceiveMessage", message);
