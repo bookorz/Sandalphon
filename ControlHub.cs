@@ -22,7 +22,9 @@ namespace sandalphon
 
         public void On_Command_Error(Node Node, Transaction Txn, CommandReturnMessage Msg)
         {
- 
+            string NodeName = Node.Name;
+            AlarmMessage Status = AlarmMapping.Get(Node.Name, Msg.Value);
+            Startup.GlobalHub.InvokeOnAllAsync("On_Node_Connection_Changed", new { NodeName, Status });
         }
 
         public void On_Command_Excuted(Node Node, Transaction Txn, CommandReturnMessage Msg)
@@ -86,17 +88,24 @@ namespace sandalphon
 
         public void On_TaskJob_Aborted(TaskFlowManagement.CurrentProcessTask Task, string NodeName, string ReportType, string Message)
         {
-            
+            NodeName = Task.TaskName.ToString();
+            AlarmMessage Status = AlarmMapping.Get("SYSTEM", Message);
+            Startup.GlobalHub.InvokeOnAllAsync("On_Node_Connection_Changed", new { NodeName, Status });
         }
 
         public void On_TaskJob_Ack(TaskFlowManagement.CurrentProcessTask Task)
         {
-           
+            string NodeName = Task.TaskName.ToString();
+            string Status = "On_TaskJob_Ack";
+
+            Startup.GlobalHub.InvokeOnAllAsync("On_Node_Connection_Changed", new { NodeName, Status });
         }
 
         public void On_TaskJob_Finished(TaskFlowManagement.CurrentProcessTask Task)
         {
-            
+            string NodeName = Task.TaskName.ToString();
+            string Status = "On_TaskJob_Finished";
+            Startup.GlobalHub.InvokeOnAllAsync("On_Node_Connection_Changed", new { NodeName, Status });
         }
     }
 }
