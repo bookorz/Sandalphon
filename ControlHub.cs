@@ -12,10 +12,18 @@ namespace sandalphon
     {
         public ControlHub()
         {
-            RouteControl control = new RouteControl(this);
+            SECSInterface SECS = new SECSInterface(this);
+            RouteControl control = new RouteControl(SECS);
+            
             control.ConnectAll();
         }
-        public void On_Alarm_Happen(string DIOName, string ErrorCode)
+
+        public void NewTask(string Id, TaskFlowManagement.Command TaskName, Dictionary<string, string> param = null)
+        {
+          
+        }
+
+        public void On_Alarm_Happen(AlarmInfo Alarm)
         {
           
         }
@@ -51,7 +59,7 @@ namespace sandalphon
         {
         }
 
-        public void On_Data_Chnaged(string Parameter, string Value, string Type)
+        public void On_DIO_Data_Chnaged(string Parameter, string Value, string Type)
         {
       
         }
