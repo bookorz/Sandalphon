@@ -125,6 +125,7 @@ namespace sandalphon
             }
             _Report.On_TaskJob_Finished(Task);
         }
+       
 
         public void On_Connection_Connected(Socket handler)
         {

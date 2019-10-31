@@ -115,5 +115,7 @@ namespace sandalphon
             string Status = "On_TaskJob_Finished";
             Startup.GlobalHub.InvokeOnAllAsync("On_Node_Connection_Changed", new { NodeName, Status });
         }
+
+       
     }
 }

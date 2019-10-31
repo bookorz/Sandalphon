@@ -19,5 +19,5 @@
   "FoupTxfLogPath": "D:/log/foup",
   "MappingDataCheck": false,
   "DummyMappingData": false,
-  "TaskFlow": "SANWA_SORTER"
+  "TaskFlow": "WTS"
 }
