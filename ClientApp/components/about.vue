@@ -1,61 +1,78 @@
 <template>
-    <div>
-      <h1 class="mt-4">
-        ASP.NET Core & Vue Starter Template
-      </h1>
-      <p>Powered by:</p>
-      <ul>
-          <li><a href="https://get.asp.net/"><icon :icon="['fab', 'microsoft']"/> ASP.NET Core</a> and <a href="https://msdn.microsoft.com/en-us/library/67ef8sbd.aspx">C#</a>                    for cross-platform server-side code</li>
-          <li><a href="https://vuejs.org/"><icon :icon="['fab', 'vuejs']"/> Vue.js</a> for client-side code</li>
-          <li><a href="https://webpack.js.org/">Webpack</a> for building and bundling client-side resources</li>
-          <li><a href="http://getbootstrap.com/">Bootstrap</a> for layout and styling</li>
-          <li><a href="http://jquery.com/">JQuery</a> for Bootstrap components</li>
-          <li><a href="https://fontawesome.com"><icon :icon="['fab', 'font-awesome']"/> Font Awesome</a> (Free) for the icons</li>
-          <li><a href="api/SampleData/WeatherForecasts">API sample data</a> from the dotnet controller</li>
-      </ul>
-
-      <p>To help you get started, we've also set up:</p>
-      <ul>
-          <li><strong>Client-side navigation</strong>. For example, click <em>Counter</em> then <em>Back</em> to return
-              here.</li>
-          <li><strong>Webpack dev middleware</strong>. In development mode, there's no need to run the <code>webpack</code>                    build tool. Your client-side resources are dynamically built on demand. Updates are available as soon
-              as you modify any file.</li>
-          <li><strong>Hot module replacement</strong>. In development mode, you don't even need to reload the page after
-              making most changes. Within seconds of saving changes to files, your Vue.js app will be rebuilt and
-              a new instance injected is into the page.</li>
-          <li><strong>Code splitting and lazy loading</strong>. Vue.js components may optionally be bundled individually and
-              loaded on demand. For example, the code and template for 'Counter' is not loaded until you navigate to
-              it..</li>
-          <li><strong>Efficient production builds</strong>. In production mode, development-time features are disabled,
-              and the <code>webpack</code> build tool produces minified static CSS and JavaScript files.</li>
-      </ul>
-
-      <br><br>
-
-      <div class="text-center">
-        <h4 class="mt-5">
-          Made with <icon icon="heart" class="fuscia" /> by
-          <a href="https://trilon.io" target="_blank" class="fuscia">Trilon.io</a>
-        </h4>
-
-        <br>
-
-        <a href="https://trilon.io" target="_blank">
-          <img class="trilon-mini" src="https://trilon.io/trilon-logo-clear.png" />
-        </a>
+  <div>
+    <h1 class="mt-4">
+      SECS Log
+    </h1>
+    <div class="chatbox">
+      <div class="msg" v-for="chat in livechat">
+        <span style="white-space: pre">{{chat.content}}</span>
       </div>
-
     </div>
+  </div>
 </template>
 
 <script>
-export default {
-  data () {
-    return {}
+  export default {
+    data() {
+      return {
+        livechat: [],
+        msgCount: 0
+      }
+    },
+    created() {
+      this.$signalrHub.$on('On_Message_Log', this.onDataRcv)
+    },
+    beforeDestroy() {
+      // Make sure to cleanup SignalR event handlers when removing the component
+      this.$signalrHub.$off('On_Message_Log', this.onDataRcv)
+
+    },
+    methods: {
+      onDataRcv: function (data) {
+        let newMsg = {
+          username: data[0].type, 
+          content: data[0].message,
+          timestamp: ''
+        };
+        this.livechat.push(newMsg)
+      }
+    },
+    updated() {
+      let tempCount = document.querySelectorAll('.msg');
+      this.msgCount = tempCount.length;
+    },
+    watch: {
+        msgCount() {
+        //scroll to bottom if msg added
+        let chatbox = document.querySelector('.chatbox');
+        chatbox.scrollTo(0,chatbox.scrollHeight);
+      }
+    }
   }
-}
 </script>
 
 <style>
+  .chatbox {
+    height: 90vh;
+    padding-left: 16px;
+    overflow-y: auto;
+    border: 1px solid #d7d9d5;
+    background-color: #fff;
+    outline: none;
+  }
 
+  .msg {
+    margin: 8px 0;
+  }
+
+  .msg h3 {
+    margin: 0;
+    margin-right: 2px;
+    color: #333399;
+    display: inline-block;
+  }
+
+  .msg h3.self {
+    color: #888;
+  }
 </style>

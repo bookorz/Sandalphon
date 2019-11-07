@@ -40,11 +40,21 @@ namespace sandalphon
 
         public void On_Command_Excuted(Node Node, Transaction Txn, CommandReturnMessage Msg)
         {
+            string Event = "On_Command_Excuted";
+            if (Comm != null)
+            {
+                Comm.Send(_handler, JsonConvert.SerializeObject(new { Event, Node, Txn, Msg }) + "\r");
+            }
             _Report.On_Command_Excuted(Node, Txn, Msg);
         }
 
         public void On_Command_Finished(Node Node, Transaction Txn, CommandReturnMessage Msg)
         {
+            string Event = "On_Command_Finished";
+            if (Comm != null)
+            {
+                Comm.Send(_handler, JsonConvert.SerializeObject(new { Event, Node, Txn, Msg }) + "\r");
+            }
             _Report.On_Command_Finished(Node, Txn, Msg);
         }
 
@@ -67,6 +77,11 @@ namespace sandalphon
 
         public void On_Event_Trigger(Node Node, CommandReturnMessage Msg)
         {
+            string Event = "On_Event_Trigger";
+            if (Comm != null)
+            {
+                Comm.Send(_handler, JsonConvert.SerializeObject(new { Event, Node, Msg }) + "\r");
+            }
             _Report.On_Event_Trigger(Node, Msg);
         }
 
@@ -169,6 +184,11 @@ namespace sandalphon
                     TaskFlowManagement.Command taskName = JsonConvert.DeserializeObject<TaskFlowManagement.Command>(restoredObject.Property("TaskName").Value.ToString());
                     Dictionary<string,string> param = JsonConvert.DeserializeObject<Dictionary<string, string>>(restoredObject.Property("param").Value.ToString());
                     TaskFlowManagement.Excute(Id,taskName,param);
+                    break;
+                case "MessageLog":
+                    string Type = restoredObject.Property("Type").Value.ToString();
+                    string Message = restoredObject.Property("Message").Value.ToString();
+                    _Report.On_Message_Log(Type, Message);
                     break;
             }
         }

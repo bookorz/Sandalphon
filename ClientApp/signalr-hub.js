@@ -37,5 +37,8 @@ export default {
     connection.on('UserConnected', (data) => {
       signalrHub.$emit('UserConnected', data)
     })
+    connection.on('On_Message_Log', (data) => {
+      signalrHub.$emit('On_Message_Log', data)
+    })
   }
 }

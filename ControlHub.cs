@@ -76,7 +76,7 @@ namespace sandalphon
 
         public void On_Message_Log(string Type, string Message)
         {
-            
+            Startup.GlobalHub.InvokeOnAllAsync("On_Message_Log", new { Type, Message });
         }
 
         public void On_Node_Connection_Changed(string NodeName, string Status)
