@@ -5,16 +5,31 @@ Vue.use(Vuex)
 
 // TYPES
 const MAIN_SET_COUNTER = 'MAIN_SET_COUNTER'
+const MAIN_SET_FORM = 'MAIN_SET_FORM'
 
 // STATE
 const state = {
-  counter: 1
+  counter: 1,
+  form: {
+    ELPT: null,
+    ILPT: null,
+    Source: null,
+    Destination: null,
+    WithMapping: true,
+    Path: 'Dirty',
+    WHR_Access_ILPT: null,
+    Position: 'Home',
+    Direction: 'Face_To_Face'
+  }
 }
 
 // MUTATIONS
 const mutations = {
   [MAIN_SET_COUNTER] (state, obj) {
     state.counter = obj.counter
+  },
+  [MAIN_SET_FORM] (form, obj) {
+    state.form = obj.form
   }
 }
 
@@ -22,6 +37,9 @@ const mutations = {
 const actions = ({
   setCounter ({ commit }, obj) {
     commit(MAIN_SET_COUNTER, obj)
+  },
+  setForm ({ commit }, obj) {
+    commit(MAIN_SET_FORM, obj)
   }
 })
 

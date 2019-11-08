@@ -73,10 +73,45 @@ namespace sandalphon
         {
             
         }
-
+        public class LogInfo
+        {
+            public string Type { get; set; }
+            public string Message { get; set; }
+        }
+        public static List<LogInfo> SECS_Log = new List<LogInfo>();
+        public static List<LogInfo> CMD_Log = new List<LogInfo>();
         public void On_Message_Log(string Type, string Message)
         {
+            if (Type.Equals("SECS"))
+            {
+                lock (SECS_Log)
+                {
+                    LogInfo tmp = new LogInfo();
+                    tmp.Type = Type;
+                    tmp.Message = Message;
+                    SECS_Log.Add(tmp);
+                    if (SECS_Log.Count > 6000)
+                    {
+                        SECS_Log.RemoveAt(0);
+                    }
+                }
+            }
+            else if (Type.Equals("CMD"))
+            {
+                lock (CMD_Log)
+                {
+                    LogInfo tmp = new LogInfo();
+                    tmp.Type = Type;
+                    tmp.Message = Message;
+                    CMD_Log.Add(tmp);
+                    if (CMD_Log.Count > 6000)
+                    {
+                        CMD_Log.RemoveAt(0);
+                    }
+                }
+            }
             Startup.GlobalHub.InvokeOnAllAsync("On_Message_Log", new { Type, Message });
+
         }
 
         public void On_Node_Connection_Changed(string NodeName, string Status)
@@ -96,24 +131,21 @@ namespace sandalphon
 
         public void On_TaskJob_Aborted(TaskFlowManagement.CurrentProcessTask Task, string NodeName, string ReportType, string Message)
         {
-            NodeName = Task.TaskName.ToString();
+            
             AlarmMessage Status = AlarmMapping.Get("SYSTEM", Message);
-            Startup.GlobalHub.InvokeOnAllAsync("On_Node_Connection_Changed", new { NodeName, Status });
+            Startup.GlobalHub.InvokeOnAllAsync("On_TaskJob_Aborted", new { Task, NodeName, Status });
         }
 
         public void On_TaskJob_Ack(TaskFlowManagement.CurrentProcessTask Task)
         {
-            string NodeName = Task.TaskName.ToString();
-            string Status = "On_TaskJob_Ack";
 
-            Startup.GlobalHub.InvokeOnAllAsync("On_Node_Connection_Changed", new { NodeName, Status });
+
+            Startup.GlobalHub.InvokeOnAllAsync("On_TaskJob_Ack", new { Task });
         }
 
         public void On_TaskJob_Finished(TaskFlowManagement.CurrentProcessTask Task)
         {
-            string NodeName = Task.TaskName.ToString();
-            string Status = "On_TaskJob_Finished";
-            Startup.GlobalHub.InvokeOnAllAsync("On_Node_Connection_Changed", new { NodeName, Status });
+            Startup.GlobalHub.InvokeOnAllAsync("On_TaskJob_Finished", new { Task });
         }
 
        

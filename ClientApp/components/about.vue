@@ -1,13 +1,24 @@
 <template>
+
   <div>
-    <h1 class="mt-4">
-      SECS Log
-    </h1>
-    <div class="chatbox">
-      <div class="msg" v-for="chat in livechat">
-        <span style="white-space: pre">{{chat.content}}</span>
-      </div>
-    </div>
+    <b-card no-body>
+      <b-tabs v-model="tabIndex" card>
+        <b-tab title="SECS/GEM" :title-link-class="linkClass(0)">
+          <div class="secslog">
+            <div class="msg" v-for="log in secslog">
+              <span style="white-space: pre">{{log.message}}</span>
+            </div>
+          </div>
+        </b-tab>
+        <b-tab title="Command" :title-link-class="linkClass(1)">
+          <div class="cmdlog">
+            <div class="msg" v-for="log in cmdlog">
+              <span style="white-space: pre">{{log.message}}</span>
+            </div>
+          </div>
+        </b-tab>
+      </b-tabs>
+    </b-card>
   </div>
 </template>
 
@@ -15,8 +26,10 @@
   export default {
     data() {
       return {
-        livechat: [],
-        msgCount: 0
+        secslog: [],
+        cmdlog: [],
+        msgCount: 0,
+        tabIndex: 0
       }
     },
     created() {
@@ -30,11 +43,27 @@
     methods: {
       onDataRcv: function (data) {
         let newMsg = {
-          username: data[0].type, 
-          content: data[0].message,
+          type: data[0].type,
+          message: data[0].message,
           timestamp: ''
         };
-        this.livechat.push(newMsg)
+        if (data[0].type == 'CMD') {
+          this.cmdlog.push(newMsg)
+        } else if (data[0].type == 'SECS') {
+          this.secslog.push(newMsg)
+        }
+      },
+      linkClass(idx) {
+        if (this.tabIndex === idx) {
+          return ['bg-primary', 'text-light']
+        } else {
+          return ['bg-light', 'text-info']
+        }
+      },
+      async GetLogData() {
+        let response = await this.$http.get('/api/Transfer/GetLogData')
+        this.secslog = response.data.secslog
+        this.cmdlog = response.data.cmdlog
       }
     },
     updated() {
@@ -42,18 +71,23 @@
       this.msgCount = tempCount.length;
     },
     watch: {
-        msgCount() {
+      msgCount() {
         //scroll to bottom if msg added
-        let chatbox = document.querySelector('.chatbox');
-        chatbox.scrollTo(0,chatbox.scrollHeight);
+        let secslog = document.querySelector('.secslog');
+        secslog.scrollTo(0, secslog.scrollHeight);
+        let cmdlog = document.querySelector('.cmdlog');
+        cmdlog.scrollTo(0, cmdlog.scrollHeight);
       }
+    },
+    mounted() {
+      this.GetLogData()
     }
   }
 </script>
 
 <style>
-  .chatbox {
-    height: 90vh;
+  .secslog, .cmdlog {
+    height: 85vh;
     padding-left: 16px;
     overflow-y: auto;
     border: 1px solid #d7d9d5;
@@ -65,14 +99,14 @@
     margin: 8px 0;
   }
 
-  .msg h3 {
-    margin: 0;
-    margin-right: 2px;
-    color: #333399;
-    display: inline-block;
-  }
+    .msg h3 {
+      margin: 0;
+      margin-right: 2px;
+      color: #333399;
+      display: inline-block;
+    }
 
-  .msg h3.self {
-    color: #888;
-  }
+      .msg h3.self {
+        color: #888;
+      }
 </style>

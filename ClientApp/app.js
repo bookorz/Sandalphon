@@ -6,7 +6,12 @@ import { sync } from 'vuex-router-sync'
 import App from 'components/app-root'
 import { FontAwesomeIcon } from './icons'
 import signalrHub from './signalr-hub'
-
+import BlockUI from 'vue-blockui'
+import BootstrapVue from 'bootstrap-vue'
+import 'bootstrap/dist/css/bootstrap.css'
+import 'bootstrap-vue/dist/bootstrap-vue.css'
+Vue.use(BootstrapVue)
+Vue.use(BlockUI)
 // Registration of global components
 Vue.component('icon', FontAwesomeIcon)
 

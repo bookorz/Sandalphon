@@ -61,5 +61,24 @@ namespace sandalphon.Controllers
 
             return Ok(result);
         }
+        [HttpGet("[action]")]
+        public IActionResult GetLogData()
+        {
+            lock (ControlHub.SECS_Log)
+            {
+                lock (ControlHub.CMD_Log)
+                {
+                    var result = new
+                    {
+                        status = "OK",
+                        secslog = ControlHub.SECS_Log,
+                        cmdlog = ControlHub.CMD_Log,
+                        ErrMsg = ""
+                    };
+
+                    return Ok(result);
+                }
+            }
+        }
     }
 }

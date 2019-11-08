@@ -40,5 +40,12 @@ export default {
     connection.on('On_Message_Log', (data) => {
       signalrHub.$emit('On_Message_Log', data)
     })
+    connection.on('On_TaskJob_Ack', (data) => {
+      signalrHub.$emit('On_TaskJob_Ack', data)
+    })
+    connection.on('On_TaskJob_Finished', (data) => {
+      signalrHub.$emit('On_TaskJob_Finished', data)
+    })
+
   }
 }
