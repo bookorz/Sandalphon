@@ -14,12 +14,22 @@ namespace sandalphon.Controllers
         {
             public string Name { get; set; }
             public string Target { get; set; }
+            public string Value { get; set; }
+            public string Position { get; set; }
+            public string Mode { get; set; }
+            public string Station { get; set; }
+            public string Direction { get; set; }
         }
         [HttpPost("[action]")]
         public IActionResult TaskRun([FromBody]TaskRequest req)
         {
             Dictionary<string, string> param = new Dictionary<string, string>();
             param.Add("@Target", req.Target);
+            param.Add("@Value", req.Value);
+            param.Add("@Position", req.Position);
+            param.Add("@Mode", req.Mode);
+            param.Add("@Station", req.Station);
+            param.Add("@Direction", req.Direction);
             TaskFlowManagement.Excute(Guid.NewGuid().ToString(), (TaskFlowManagement.Command)Enum.Parse(typeof(TaskFlowManagement.Command), req.Name), param);
 
             var result = new

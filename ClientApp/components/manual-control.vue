@@ -1,7 +1,7 @@
 <template>
   <div class="row">
     <div class="col-4" id="divSTK">
-      <b-card title="ELPT Command" sub-title="">
+      <b-card header="ELPT Command" bg-variant="dark" text-variant="white" sub-title="">
         <b-form-group>
           <b-form-select id="input-3"
                          v-model="form.ELPT"
@@ -28,7 +28,7 @@
         </b-form-group>
       </b-card>
 
-      <b-card title="ILPT Command" sub-title="">
+      <b-card header="ILPT Command" bg-variant="dark" text-variant="white" sub-title="">
         <b-form-group>
           <b-form-select id="input-4"
                          v-model="form.ILPT"
@@ -55,7 +55,7 @@
           <button type="button" class="btn btn-warning">Reset</button>
         </b-form-group>
       </b-card>
-      <b-card title="FOUP Robot Command" sub-title="">
+      <b-card header="FOUP Robot Command" bg-variant="dark" text-variant="white" sub-title="">
         <b-form-group>
           <b-form-select id="input-5"
                          v-model="form.Source"
@@ -83,21 +83,21 @@
     </div>
     <div class="col-8" id="divWTS">
       <b-card-group deck>
-        <b-card title="WHR Command" sub-title="" class=" col-9">
+        <b-card header="WHR Command" bg-variant="dark" text-variant="white" sub-title="" class=" col-9">
           <b-form-group>
             <button type="button" class="btn btn-warning" @click="RunTask('WHR_RETRACT')">WHR Retract</button>
-            <button type="button" class="btn btn-warning">WHR Safty Home</button>
-            <button type="button" class="btn btn-warning">WHR Reset</button>
+            <button type="button" class="btn btn-warning" @click="RunTask('WHR_SHOME')">WHR Safty Home</button>
+            <button type="button" class="btn btn-warning" @click="RunTask('WHR_RESET')">WHR Reset</button>
           </b-form-group>
         </b-card>
-        <b-card title="Path" sub-title="" class=" col-3">
+        <b-card header="Path" bg-variant="dark" text-variant="white" sub-title="" class=" col-3">
           <b-form-radio-group id="radio-group-8"
                               v-model="form.Path"
                               :options="Paths"
                               name="radio-options4"></b-form-radio-group>
         </b-card>
       </b-card-group>
-      <b-card title="WHR Access ILPT Command" sub-title="">
+      <b-card header="WHR Access ILPT Command" bg-variant="dark" text-variant="white" sub-title="">
         <b-form-group>
           <b-form-select id="input-11"
                          v-model="form.WHR_Access_ILPT"
@@ -105,46 +105,46 @@
                          required></b-form-select>
         </b-form-group>
         <b-form-group>
-          <button type="button" class="btn btn-success">Prepare Pick</button>
-          <button type="button" class="btn btn-success">Pick</button>
-          <button type="button" class="btn btn-info">Prepare Place</button>
-          <button type="button" class="btn btn-info">Place</button>
+          <button type="button" class="btn btn-success" @click="RunTask('WHR_PREPAREPICK')">Prepare Pick</button>
+          <button type="button" class="btn btn-success" @click="RunTask('WHR_PICK')">Pick</button>
+          <button type="button" class="btn btn-info" @click="RunTask('WHR_PREPAREPLACE')">Prepare Place</button>
+          <button type="button" class="btn btn-info" @click="RunTask('WHR_PLACE')">Place</button>
         </b-form-group>
       </b-card>
-      <b-card title="WHR Access CTU Command" sub-title="">
+      <b-card header="WHR Access CTU Command" bg-variant="dark" text-variant="white" sub-title="">
         <b-form-group>
-          <button type="button" class="btn btn-success">CTU Prepare Pick</button><!-- From WHR -->
-          <button type="button" class="btn btn-success">WHR Prepare Place</button><!-- to CTU -->
-          <button type="button" class="btn btn-success">WHR Extend</button><!-- to CTU -->
-          <button type="button" class="btn btn-success">CTU Hold</button><!-- From WHR -->
-          <button type="button" class="btn btn-success">WHR Down</button>
-          <button type="button" class="btn btn-success">WHR Retract</button>
+          <button type="button" class="btn btn-success" @click="RunTask('CTU_PREPAREPICK_WHR')">CTU Prepare Pick</button><!-- From WHR -->
+          <button type="button" class="btn btn-success" @click="RunTask('WHR_PREPAREPLACE_CTU')">WHR Prepare Place</button><!-- to CTU -->
+          <button type="button" class="btn btn-success" @click="RunTask('WHR_EXTEND_PUT')">WHR Extend</button><!-- to CTU -->
+          <button type="button" class="btn btn-success" @click="RunTask('CTU_HOLD')">CTU Hold</button><!-- From WHR -->
+          <button type="button" class="btn btn-success" @click="RunTask('WHR_DOWN')">WHR Down</button>
+          <button type="button" class="btn btn-success" @click="RunTask('WHR_RETRACT')">WHR Retract</button>
         </b-form-group>
         <b-form-group>
-          <button type="button" class="btn btn-info">CTU Prepare Place</button><!-- To WHR -->
-          <button type="button" class="btn btn-info">WHR Prepare Pick</button><!-- From CTU -->
-          <button type="button" class="btn btn-info">WHR Extend</button><!-- From CTU -->
-          <button type="button" class="btn btn-info">WHR Up</button>
-          <button type="button" class="btn btn-info">CTU Release</button><!-- To WHR -->
-          <button type="button" class="btn btn-info">WHR Retract</button>
+          <button type="button" class="btn btn-info" @click="RunTask('CTU_PREPAREPLACE_WHR')">CTU Prepare Place</button><!-- To WHR -->
+          <button type="button" class="btn btn-info" @click="RunTask('WHR_PREPAREPICK_CTU')">WHR Prepare Pick</button><!-- From CTU -->
+          <button type="button" class="btn btn-info" @click="RunTask('WHR_EXTEND_GET')">WHR Extend</button><!-- From CTU -->
+          <button type="button" class="btn btn-info" @click="RunTask('WHR_UP')">WHR Up</button>
+          <button type="button" class="btn btn-info" @click="RunTask('CTU_RELEASE')">CTU Release</button><!-- To WHR -->
+          <button type="button" class="btn btn-info" @click="RunTask('WHR_RETRACT')">WHR Retract</button>
         </b-form-group>
       </b-card>
       <b-card-group deck>
-        <b-card title="CTU Command" sub-title="">
+        <b-card header="CTU Command" bg-variant="dark" text-variant="white" sub-title="">
           <b-form-group>
-            <button type="button" class="btn btn-warning">CTU Home</button>
-            <button type="button" class="btn btn-warning">CTU Reset</button>
-            <button type="button" class="btn btn-warning">CTU Init</button>
+            <button type="button" class="btn btn-warning" @click="RunTask('CTU_HOME')">CTU Home</button>
+            <button type="button" class="btn btn-warning" @click="RunTask('CTU_RESET')">CTU Reset</button>
+            <button type="button" class="btn btn-warning" @click="RunTask('CTU_INIT')">CTU Init</button>
           </b-form-group>
         </b-card>
-        <b-card title="PTZ Command" sub-title="">
+        <b-card header="PTZ Command" bg-variant="dark" text-variant="white" sub-title="">
           <b-form-group>
-            <button type="button" class="btn btn-warning">PTZ Home</button>
+            <button type="button" class="btn btn-warning" @click="RunTask('PTZ_HOME')">PTZ Home</button>
             <button type="button" class="btn btn-warning">PTZ Reset</button>
           </b-form-group>
         </b-card>
       </b-card-group>
-      <b-card title="CTU Access PTZ Command" sub-title="">
+      <b-card header="CTU Access PTZ Command" bg-variant="dark" text-variant="white" sub-title="">
 
         <b-form-group label="Position">
           <b-form-radio-group id="radio-group-1"
@@ -161,15 +161,15 @@
 
         <b-form-group>
           <button type="button" class="btn btn-info">CTU Prepare Place</button><!-- To PTZ -->
-          <button type="button" class="btn btn-info">PTZ Transfer</button><!-- Get from CTU -->
-          <button type="button" class="btn btn-info">CTU Place</button><!-- to CTU -->
-          <button type="button" class="btn btn-info">PTZ Home</button><!-- From WHR -->
+          <button type="button" class="btn btn-info" @click="RunTask('PTZ_TRANSFER')">PTZ Transfer</button><!-- Get from CTU -->
+          <button type="button" class="btn btn-info" @click="RunTask('CTU_PLACE_PTZ')">CTU Place</button><!-- to CTU -->
+          <button type="button" class="btn btn-info" @click="RunTask('PTZ_HOME')">PTZ Home</button><!-- From WHR -->
         </b-form-group>
         <b-form-group>
           <button type="button" class="btn btn-success">CTU Prepare Pick</button><!-- From PTZ -->
-          <button type="button" class="btn btn-success">PTZ Transfer</button><!-- Get from CTU -->
-          <button type="button" class="btn btn-success">CTU Pick</button><!-- to CTU -->
-          <button type="button" class="btn btn-success">PTZ Home</button><!-- From WHR -->
+          <button type="button" class="btn btn-success" @click="RunTask('PTZ_TRANSFER')">PTZ Transfer</button><!-- Get from CTU -->
+          <button type="button" class="btn btn-success" @click="RunTask('CTU_PICK_PTZ')">CTU Pick</button><!-- to CTU -->
+          <button type="button" class="btn btn-success" @click="RunTask('PTZ_HOME')">PTZ Home</button><!-- From WHR -->
         </b-form-group>
 
       </b-card>
@@ -181,6 +181,16 @@
              v-show="spinnerStatus">
       <b-spinner variant="info" label="Loading..."></b-spinner>
     </BlockUI>
+
+    <b-modal id="alarm_modal" hide-footer>
+      <template v-slot:modal-title>
+        Alarm Happend
+      </template>
+      <div class="d-block text-center">
+        {{alarm_message}}
+      </div>
+      <b-button class="mt-3" block @click="$bvModal.hide('alarm_modal')">Close Me</b-button>
+    </b-modal>
   </div>
 </template>
 
@@ -195,18 +205,19 @@
         ILPT_List: [{ text: 'Select ILPT', value: null }, 'ILPT1', 'ILPT2'],
         Source_List: [{ text: 'Select Source', value: null }, 'ILPT1', 'ILPT2', 'ELPT1', 'ELPT2', 'SHELF1', 'SHELF2', 'SHELF3', 'SHELF4', 'SHELF5', 'SHELF6', 'SHELF7', 'SHELF8', 'SHELF9', 'SHELF10', 'SHELF11', 'SHELF12', 'SHELF13', 'SHELF14', 'SHELF15', 'SHELF16'],
         Destination_List: [{ text: 'Select Destination', value: null }, 'ILPT1', 'ILPT2', 'ELPT1', 'ELPT2', 'SHELF1', 'SHELF2', 'SHELF3', 'SHELF4', 'SHELF5', 'SHELF6', 'SHELF7', 'SHELF8', 'SHELF9', 'SHELF10', 'SHELF11', 'SHELF12', 'SHELF13', 'SHELF14', 'SHELF15', 'SHELF16'],
-        Paths: ['Clean', 'Dirty'],
+        Paths: [{ text: 'Clean', value: 0 }, { text: 'Dirty', value: 1 }],
         Positions: [
-          { text: 'Odd', value: 'Odd' },
-          { text: 'Even', value: 'Even' },
-          { text: 'Home', value: 'Home' }
+          { text: 'Odd', value: '0' },
+          { text: 'Even', value: '1' },
+          { text: 'Home', value: '2' }
         ],
         Directions: [
-          { text: 'Face To Face', value: 'Face_To_Face' },
-          { text: 'Back to Back', value: 'Back_to_Back' },
-          { text: 'Face To Back', value: 'Face_To_Back' },
-          { text: 'Back To Face', value: 'Back_To_Face' }
-        ]
+          { text: 'Face To Face', value: '0' },
+          { text: 'Back to Back', value: '1' },
+          { text: 'Face To Back', value: '2' },
+          { text: 'Back To Face', value: '3' }
+        ],
+        alarm_message: null
       }
     },
 
@@ -222,27 +233,70 @@
         let response = await this.$http.get('/api/Transfer/NodeInfoList')
         this.nodeList = response.data.msg
       },
-      onSelectedNode(event) {
-        this.showType = event.target.value
-      },
       RunTask(TaskName) {
-        this.msg = 'Sending...'
-        this.spinnerStatus = true
         var target = ''
+        var mode = this.form.Path
+        var station = this.form.Position
+        var direction = this.form.Direction
+        var value = ''
+        var position = ''
+
 
         switch (TaskName) {
-          case 'WHR_RETRACT':
-
+          case 'WHR_PREPAREPICK':
+            position = this.form.WHR_Access_ILPT
             break
+          case 'WHR_PREPAREPICK_CTU':
+            TaskName = 'WHR_PREPAREPICK'
+            position = 'CTU'
+            break;
+          case 'WHR_PREPAREPLACE_CTU':
+            TaskName = 'WHR_PREPAREPLACE'
+            position = 'CTU'
+            break;
+          case 'CTU_PREPAREPICK_WHR':
+            TaskName = 'CTU_PREPAREPICK'
+            position = 'WHR'
+            break;
+          case 'CTU_PREPAREPLACE_WHR':
+            TaskName = 'CTU_PREPAREPLACE'
+            position = 'WHR'
+            break;
+          case 'WHR_EXTEND_PUT':
+            TaskName = 'WHR_EXTEND'
+            value = '1'
+            station = '3'
+            break;
+          case 'WHR_EXTEND_GET':
+            TaskName = 'WHR_EXTEND'
+            value = '0'
+            station = '3'
+            break;
+          case 'CTU_PLACE_PTZ':
+            TaskName = 'CTU_PLACE'
+            position = 'PTZ'
+            break;
+          case 'CTU_PICK_PTZ':
+            TaskName = 'CTU_PICK'
+            position = 'PTZ'
+            break;
         }
-        this.$http.post('/api/Transfer/TaskRun', {name : TaskName, target: target})
-      
+        this.$http.post('/api/Transfer/TaskRun', { name: TaskName, target: target, mode: mode, station: station, direction: direction, value: value, position: position })
+
       },
       On_TaskJob_Ack(data) {
-        this.msg = 'Moving...'
+        this.msg = 'Excuting...'
+        this.spinnerStatus = true
       },
       On_TaskJob_Finished(data) {
         this.spinnerStatus = false
+      },
+      On_TaskJob_Aborted(data) {
+        this.spinnerStatus = false
+      },
+      On_Alarm_Happen(data) {
+        this.alarm_message = data[0]
+        this.$bvModal.show('alarm_modal')
       }
     },
 
@@ -253,12 +307,16 @@
     created() {
       this.$signalrHub.$on('On_TaskJob_Ack', this.On_TaskJob_Ack)
       this.$signalrHub.$on('On_TaskJob_Finished', this.On_TaskJob_Finished)
+      this.$signalrHub.$on('On_TaskJob_Aborted', this.On_TaskJob_Aborted)
+      this.$signalrHub.$on('On_Alarm_Happen', this.On_Alarm_Happen)
     },
     beforeDestroy() {
       this.setForm({ form: form })
       // Make sure to cleanup SignalR event handlers when removing the component
       this.$signalrHub.$off('On_TaskJob_Ack', this.On_TaskJob_Ack)
       this.$signalrHub.$off('On_TaskJob_Finished', this.On_TaskJob_Finished)
+      this.$signalrHub.$off('On_TaskJob_Aborted', this.On_TaskJob_Aborted)
+      this.$signalrHub.$off('On_Alarm_Happen', this.On_Alarm_Happen)
     }
   }
 </script>

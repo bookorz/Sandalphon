@@ -25,14 +25,15 @@ namespace sandalphon
 
         public void On_Alarm_Happen(AlarmInfo Alarm)
         {
-          
+      
+            Startup.GlobalHub.InvokeOnAllAsync("On_Alarm_Happen", new { Alarm });
         }
 
         public void On_Command_Error(Node Node, Transaction Txn, CommandReturnMessage Msg)
         {
-            string NodeName = Node.Name;
-            AlarmMessage Status = AlarmMapping.Get(Node.Name, Msg.Value);
-            Startup.GlobalHub.InvokeOnAllAsync("On_Node_Connection_Changed", new { NodeName, Status });
+            //string NodeName = Node.Name;
+            //AlarmMessage Status = AlarmMapping.Get(Node.Name, Msg.Value);
+            //Startup.GlobalHub.InvokeOnAllAsync("On_Node_Connection_Changed", new { NodeName, Status });
         }
 
         public void On_Command_Excuted(Node Node, Transaction Txn, CommandReturnMessage Msg)

@@ -16,10 +16,10 @@ const state = {
     Source: null,
     Destination: null,
     WithMapping: true,
-    Path: 'Dirty',
+    Path: '1',
     WHR_Access_ILPT: null,
-    Position: 'Home',
-    Direction: 'Face_To_Face'
+    Position: '0',
+    Direction: '0'
   }
 }
 
