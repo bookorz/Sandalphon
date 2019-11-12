@@ -83,6 +83,7 @@ namespace sandalphon
         public static List<LogInfo> CMD_Log = new List<LogInfo>();
         public void On_Message_Log(string Type, string Message)
         {
+            Message = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss.fff")+ " " + Message;
             if (Type.Equals("SECS"))
             {
                 lock (SECS_Log)

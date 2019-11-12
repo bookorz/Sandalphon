@@ -1,180 +1,193 @@
 <template>
-  <div class="row">
-    <div class="col-4" id="divSTK">
-      <b-card header="ELPT Command" bg-variant="dark" text-variant="white" sub-title="">
-        <b-form-group>
-          <b-form-select id="input-3"
-                         v-model="form.ELPT"
-                         :options="ELPT_List"
-                         required></b-form-select>
-        </b-form-group>
-        <b-form-group>
-          <button type="button" class="btn btn-primary">Read RFID</button>
-          <button type="button" class="btn btn-secondary">Clamp</button>
-          <button type="button" class="btn btn-secondary">UnClamp</button>
-        </b-form-group>
-        <b-form-group>
-          <button type="button" class="btn btn-success">Open Shutter</button>
-          <button type="button" class="btn btn-success">Close Shutter</button>
+  <div>
+    
+      <b-row>
+        <b-col >
+          <b-card header="ELPT Command" bg-variant="dark" text-variant="white" sub-title="">
+            <b-form-group>
+              <b-form-select id="input-3"
+                             v-model="form.ELPT"
+                             :options="ELPT_List"
+                             required></b-form-select>
+            </b-form-group>
+            <b-form-group>
+              <button type="button" class="btn btn-primary">Read RFID</button>
+              <button type="button" class="btn btn-secondary">Clamp</button>
+              <button type="button" class="btn btn-secondary">UnClamp</button>
+            </b-form-group>
+            <b-form-group>
+              <button type="button" class="btn btn-success">Open Shutter</button>
+              <button type="button" class="btn btn-success">Close Shutter</button>
 
-        </b-form-group>
-        <b-form-group>
-          <button type="button" class="btn btn-info">Move In</button>
-          <button type="button" class="btn btn-info">Move Out</button>
-        </b-form-group>
-        <b-form-group>
-          <button type="button" class="btn btn-warning">Init</button>
-          <button type="button" class="btn btn-warning">Reset</button>
-        </b-form-group>
-      </b-card>
+            </b-form-group>
+            <b-form-group>
+              <button type="button" class="btn btn-info">Move In</button>
+              <button type="button" class="btn btn-info">Move Out</button>
+            </b-form-group>
+            <b-form-group>
+              <button type="button" class="btn btn-warning">Init</button>
+              <button type="button" class="btn btn-warning">Reset</button>
+            </b-form-group>
+          </b-card>
 
-      <b-card header="ILPT Command" bg-variant="dark" text-variant="white" sub-title="">
-        <b-form-group>
-          <b-form-select id="input-4"
-                         v-model="form.ILPT"
-                         :options="ILPT_List"
-                         required></b-form-select>
-        </b-form-group>
+          <b-card header="ILPT Command" bg-variant="dark" text-variant="white" sub-title="">
+            <b-form-group>
+              <b-form-select id="input-4"
+                             v-model="form.ILPT"
+                             :options="ILPT_List"
+                             required></b-form-select>
+            </b-form-group>
 
-        <b-form-group>
-          <button type="button" class="btn btn-primary">Dock</button>
-          <button type="button" class="btn btn-primary">UnDock</button>
-          <button type="button" class="btn btn-secondary">Clamp</button>
-          <button type="button" class="btn btn-secondary">UnClamp</button>
-        </b-form-group>
-        <b-form-group>
-          <button type="button" class="btn btn-success">Load</button>
-          <button type="button" class="btn btn-success">UnLoad</button>
-          <div class="custom-control custom-checkbox">
-            <input type="checkbox" class="custom-control-input" id="withMap" v-model="form.WithMapping">
-            <label class="custom-control-label" for="withMap">With Mapping</label>
-          </div>
-        </b-form-group>
-        <b-form-group>
-          <button type="button" class="btn btn-warning">Init</button>
-          <button type="button" class="btn btn-warning">Reset</button>
-        </b-form-group>
-      </b-card>
-      <b-card header="FOUP Robot Command" bg-variant="dark" text-variant="white" sub-title="">
-        <b-form-group>
-          <b-form-select id="input-5"
-                         v-model="form.Source"
-                         :options="Source_List"
-                         required></b-form-select>
-        </b-form-group>
-        <b-form-group>
-          <button type="button" class="btn btn-primary">Prepare Pick</button>
-          <button type="button" class="btn btn-primary">Pick</button>
-        </b-form-group>
-        <b-form-group>
-          <b-form-select id="input-6"
-                         v-model="form.Destination"
-                         :options="Destination_List"
-                         required></b-form-select>
-        </b-form-group>
-        <b-form-group>
-          <button type="button" class="btn btn-primary">Prepare Place</button>
-          <button type="button" class="btn btn-primary">Place</button>
-        </b-form-group>
-      </b-card>
-      <b-card header="DEBUG Area" sub-title="">
-        {{form}}
-      </b-card>
-    </div>
-    <div class="col-8" id="divWTS">
-      <b-card-group deck>
-        <b-card header="WHR Command" bg-variant="dark" text-variant="white" sub-title="" class=" col-9">
-          <b-form-group>
-            <button type="button" class="btn btn-warning" @click="RunTask('WHR_RETRACT')">WHR Retract</button>
-            <button type="button" class="btn btn-warning" @click="RunTask('WHR_SHOME')">WHR Safty Home</button>
-            <button type="button" class="btn btn-warning" @click="RunTask('WHR_RESET')">WHR Reset</button>
-          </b-form-group>
-        </b-card>
-        <b-card header="Path" bg-variant="dark" text-variant="white" sub-title="" class=" col-3">
-          <b-form-radio-group id="radio-group-8"
-                              v-model="form.Path"
-                              :options="Paths"
-                              name="radio-options4"></b-form-radio-group>
-        </b-card>
-      </b-card-group>
-      <b-card header="WHR Access ILPT Command" bg-variant="dark" text-variant="white" sub-title="">
-        <b-form-group>
-          <b-form-select id="input-11"
-                         v-model="form.WHR_Access_ILPT"
-                         :options="ILPT_List"
-                         required></b-form-select>
-        </b-form-group>
-        <b-form-group>
-          <button type="button" class="btn btn-success" @click="RunTask('WHR_PREPAREPICK')">Prepare Pick</button>
-          <button type="button" class="btn btn-success" @click="RunTask('WHR_PICK')">Pick</button>
-          <button type="button" class="btn btn-info" @click="RunTask('WHR_PREPAREPLACE')">Prepare Place</button>
-          <button type="button" class="btn btn-info" @click="RunTask('WHR_PLACE')">Place</button>
-        </b-form-group>
-      </b-card>
-      <b-card header="WHR Access CTU Command" bg-variant="dark" text-variant="white" sub-title="">
-        <b-form-group>
-          <button type="button" class="btn btn-success" @click="RunTask('CTU_PREPAREPICK_WHR')">CTU Prepare Pick</button><!-- From WHR -->
-          <button type="button" class="btn btn-success" @click="RunTask('WHR_PREPAREPLACE_CTU')">WHR Prepare Place</button><!-- to CTU -->
-          <button type="button" class="btn btn-success" @click="RunTask('WHR_EXTEND_PUT')">WHR Extend</button><!-- to CTU -->
-          <button type="button" class="btn btn-success" @click="RunTask('CTU_HOLD')">CTU Hold</button><!-- From WHR -->
-          <button type="button" class="btn btn-success" @click="RunTask('WHR_DOWN')">WHR Down</button>
-          <button type="button" class="btn btn-success" @click="RunTask('WHR_RETRACT')">WHR Retract</button>
-        </b-form-group>
-        <b-form-group>
-          <button type="button" class="btn btn-info" @click="RunTask('CTU_PREPAREPLACE_WHR')">CTU Prepare Place</button><!-- To WHR -->
-          <button type="button" class="btn btn-info" @click="RunTask('WHR_PREPAREPICK_CTU')">WHR Prepare Pick</button><!-- From CTU -->
-          <button type="button" class="btn btn-info" @click="RunTask('WHR_EXTEND_GET')">WHR Extend</button><!-- From CTU -->
-          <button type="button" class="btn btn-info" @click="RunTask('WHR_UP')">WHR Up</button>
-          <button type="button" class="btn btn-info" @click="RunTask('CTU_RELEASE')">CTU Release</button><!-- To WHR -->
-          <button type="button" class="btn btn-info" @click="RunTask('WHR_RETRACT')">WHR Retract</button>
-        </b-form-group>
-      </b-card>
-      <b-card-group deck>
-        <b-card header="CTU Command" bg-variant="dark" text-variant="white" sub-title="">
-          <b-form-group>
-            <button type="button" class="btn btn-warning" @click="RunTask('CTU_HOME')">CTU Home</button>
-            <button type="button" class="btn btn-warning" @click="RunTask('CTU_RESET')">CTU Reset</button>
-            <button type="button" class="btn btn-warning" @click="RunTask('CTU_INIT')">CTU Init</button>
-          </b-form-group>
-        </b-card>
-        <b-card header="PTZ Command" bg-variant="dark" text-variant="white" sub-title="">
-          <b-form-group>
-            <button type="button" class="btn btn-warning" @click="RunTask('PTZ_HOME')">PTZ Home</button>
-            <button type="button" class="btn btn-warning">PTZ Reset</button>
-          </b-form-group>
-        </b-card>
-      </b-card-group>
-      <b-card header="CTU Access PTZ Command" bg-variant="dark" text-variant="white" sub-title="">
+            <b-form-group>
+              <button type="button" class="btn btn-primary">Dock</button>
+              <button type="button" class="btn btn-primary">UnDock</button>
+              <button type="button" class="btn btn-secondary">Clamp</button>
+              <button type="button" class="btn btn-secondary">UnClamp</button>
+            </b-form-group>
+            <b-form-group>
+              <button type="button" class="btn btn-success">Load</button>
+              <button type="button" class="btn btn-success">UnLoad</button>
+              <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="withMap" v-model="form.WithMapping">
+                <label class="custom-control-label" for="withMap">With Mapping</label>
+              </div>
+            </b-form-group>
+            <b-form-group>
+              <button type="button" class="btn btn-warning">Init</button>
+              <button type="button" class="btn btn-warning">Reset</button>
+            </b-form-group>
+          </b-card>
+          <b-card header="FOUP Robot Command" bg-variant="dark" text-variant="white" sub-title="">
+            <b-form-group>
+              <b-form-select id="input-5"
+                             v-model="form.Source"
+                             :options="Source_List"
+                             required></b-form-select>
+            </b-form-group>
+            <b-form-group>
+              <button type="button" class="btn btn-primary">Prepare Pick</button>
+              <button type="button" class="btn btn-primary">Pick</button>
+            </b-form-group>
+            <b-form-group>
+              <b-form-select id="input-6"
+                             v-model="form.Destination"
+                             :options="Destination_List"
+                             required></b-form-select>
+            </b-form-group>
+            <b-form-group>
+              <button type="button" class="btn btn-primary">Prepare Place</button>
+              <button type="button" class="btn btn-primary">Place</button>
+            </b-form-group>
+          </b-card>
+          <b-card header="DEBUG Area" sub-title="">
+            {{form}}
+          </b-card>
+        </b-col>
+        <b-col cols="8">
+          <b-card-group deck>
+            <b-card header="WHR Command" bg-variant="dark" text-variant="white" sub-title="" class=" col-9">
+              <b-form-group>
+                <button type="button" class="btn btn-warning" @click="RunTask('WHR_RETRACT')">WHR Retract</button>
+                <button type="button" class="btn btn-warning" @click="RunTask('WHR_SHOME')">WHR Safty Home</button>
+                <button type="button" class="btn btn-warning" @click="RunTask('WHR_RESET')">WHR Reset</button>
+              </b-form-group>
+            </b-card>
+            <b-card header="Path" bg-variant="dark" text-variant="white" sub-title="" class=" col-3">
+              <b-form-radio-group id="radio-group-8"
+                                  v-model="form.Path"
+                                  :options="Paths"
+                                  name="radio-options4"></b-form-radio-group>
+            </b-card>
+          </b-card-group>
 
-        <b-form-group label="Position">
-          <b-form-radio-group id="radio-group-1"
-                              v-model="form.Position"
-                              :options="Positions"
-                              name="radio-options"></b-form-radio-group>
-        </b-form-group>
-        <b-form-group label="Direction">
-          <b-form-radio-group id="radio-group-2"
-                              v-model="form.Direction"
-                              :options="Directions"
-                              name="radio-options1"></b-form-radio-group>
-        </b-form-group>
 
-        <b-form-group>
-          <button type="button" class="btn btn-info">CTU Prepare Place</button><!-- To PTZ -->
-          <button type="button" class="btn btn-info" @click="RunTask('PTZ_TRANSFER')">PTZ Transfer</button><!-- Get from CTU -->
-          <button type="button" class="btn btn-info" @click="RunTask('CTU_PLACE_PTZ')">CTU Place</button><!-- to CTU -->
-          <button type="button" class="btn btn-info" @click="RunTask('PTZ_HOME')">PTZ Home</button><!-- From WHR -->
-        </b-form-group>
-        <b-form-group>
-          <button type="button" class="btn btn-success">CTU Prepare Pick</button><!-- From PTZ -->
-          <button type="button" class="btn btn-success" @click="RunTask('PTZ_TRANSFER')">PTZ Transfer</button><!-- Get from CTU -->
-          <button type="button" class="btn btn-success" @click="RunTask('CTU_PICK_PTZ')">CTU Pick</button><!-- to CTU -->
-          <button type="button" class="btn btn-success" @click="RunTask('PTZ_HOME')">PTZ Home</button><!-- From WHR -->
-        </b-form-group>
 
-      </b-card>
+          <b-card header="WHR Access ILPT Command" bg-variant="dark" text-variant="white" sub-title="">
+            <b-form-group>
+              <b-form-select id="input-11"
+                             v-model="form.WHR_Access_ILPT"
+                             :options="ILPT_List"
+                             required></b-form-select>
+            </b-form-group>
+            <b-form-group>
+              <button type="button" class="btn btn-success" @click="RunTask('WHR_PREPAREPICK')">Prepare Pick</button>
+              <button type="button" class="btn btn-success" @click="RunTask('WHR_PICK')">Pick</button>
+              <button type="button" class="btn btn-info" @click="RunTask('WHR_PREPAREPLACE')">Prepare Place</button>
+              <button type="button" class="btn btn-info" @click="RunTask('WHR_PLACE')">Place</button>
+            </b-form-group>
+          </b-card>
+          <b-card header="WHR Access CTU Command" bg-variant="dark" text-variant="white" sub-title="">
+            <b-form-group>
+              <button type="button" class="btn btn-success" @click="RunTask('CTU_PREPAREPICK_WHR')">CTU Prepare Pick</button><!-- From WHR -->
+              <button type="button" class="btn btn-success" @click="RunTask('WHR_PREPAREPLACE_CTU')">WHR Prepare Place</button><!-- to CTU -->
+              <button type="button" class="btn btn-success" @click="RunTask('WHR_EXTEND_PUT')">WHR Extend</button><!-- to CTU -->
+              <button type="button" class="btn btn-success" @click="RunTask('CTU_HOLD')">CTU Hold</button><!-- From WHR -->
+              <button type="button" class="btn btn-success" @click="RunTask('WHR_DOWN')">WHR Down</button>
+              <button type="button" class="btn btn-success" @click="RunTask('WHR_RETRACT')">WHR Retract</button>
+            </b-form-group>
+            <b-form-group>
+              <button type="button" class="btn btn-info" @click="RunTask('CTU_PREPAREPLACE_WHR')">CTU Prepare Place</button><!-- To WHR -->
+              <button type="button" class="btn btn-info" @click="RunTask('WHR_PREPAREPICK_CTU')">WHR Prepare Pick</button><!-- From CTU -->
+              <button type="button" class="btn btn-info" @click="RunTask('WHR_EXTEND_GET')">WHR Extend</button><!-- From CTU -->
+              <button type="button" class="btn btn-info" @click="RunTask('WHR_UP')">WHR Up</button>
+              <button type="button" class="btn btn-info" @click="RunTask('CTU_RELEASE')">CTU Release</button><!-- To WHR -->
+              <button type="button" class="btn btn-info" @click="RunTask('WHR_RETRACT')">WHR Retract</button>
+            </b-form-group>
+          </b-card>
+          <b-card-group deck>
+            <b-card header="CTU Command" bg-variant="dark" text-variant="white" sub-title="">
+              <b-form-group>
+                <button type="button" class="btn btn-warning" @click="RunTask('CTU_HOME')">Home</button>
+                <button type="button" class="btn btn-warning" @click="RunTask('CTU_RESET')">Reset</button>
+                <button type="button" class="btn btn-warning" @click="RunTask('CTU_INIT')">Initial</button>
+              </b-form-group>
+            </b-card>
+            <b-card header="PTZ Command" bg-variant="dark" text-variant="white" sub-title="">
+              <b-form-group>
+                <button type="button" class="btn btn-warning" @click="RunTask('PTZ_HOME')">Home</button>
+                <button type="button" class="btn btn-warning">Reset</button>
+              </b-form-group>
+            </b-card>
+            <b-card header="ALIGNER Command" bg-variant="dark" text-variant="white" sub-title="">
+              <b-form-group>
+                <button type="button" class="btn btn-warning" @click="RunTask('PTZ_HOME')">Home</button>
+                <button type="button" class="btn btn-warning">Align</button>
+              </b-form-group>
+            </b-card>
+          </b-card-group>
+          <b-card header="CTU Access PTZ Command" bg-variant="dark" text-variant="white" sub-title="">
 
-    </div>
+            <b-form-group label="Position">
+              <b-form-radio-group id="radio-group-1"
+                                  v-model="form.Position"
+                                  :options="Positions"
+                                  name="radio-options"></b-form-radio-group>
+            </b-form-group>
+            <b-form-group label="Direction">
+              <b-form-radio-group id="radio-group-2"
+                                  v-model="form.Direction"
+                                  :options="Directions"
+                                  name="radio-options1"></b-form-radio-group>
+            </b-form-group>
+
+            <b-form-group>
+              <button type="button" class="btn btn-info">CTU Prepare Place</button><!-- To PTZ -->
+              <button type="button" class="btn btn-info" @click="RunTask('PTZ_TRANSFER')">PTZ Transfer</button><!-- Get from CTU -->
+              <button type="button" class="btn btn-info" @click="RunTask('CTU_PLACE_PTZ')">CTU Place</button><!-- to CTU -->
+              <button type="button" class="btn btn-info" @click="RunTask('PTZ_HOME')">PTZ Home</button><!-- From WHR -->
+            </b-form-group>
+            <b-form-group>
+              <button type="button" class="btn btn-success">CTU Prepare Pick</button><!-- From PTZ -->
+              <button type="button" class="btn btn-success" @click="RunTask('PTZ_TRANSFER')">PTZ Transfer</button><!-- Get from CTU -->
+              <button type="button" class="btn btn-success" @click="RunTask('CTU_PICK_PTZ')">CTU Pick</button><!-- to CTU -->
+              <button type="button" class="btn btn-success" @click="RunTask('PTZ_HOME')">PTZ Home</button><!-- From WHR -->
+            </b-form-group>
+
+          </b-card>
+
+        </b-col>
+      </b-row>
+  
     <!-- 使用data變數spinnerStatus來控制顯示與否 -->
     <!-- 使用data變數msg來動態設定顯示字串 -->
     <BlockUI :message="msg"

@@ -106,7 +106,7 @@ namespace sandalphon.Providers
             handler.BeginReceive(state.buffer, 0, StateObject.BufferSize, 0,
                 new AsyncCallback(ReadCallback), state);
         }
-
+        string S = "";
         public void ReadCallback(IAsyncResult ar)
         {
             try
@@ -131,14 +131,23 @@ namespace sandalphon.Providers
                     // Check for end-of-file tag. If it is not there, read   
                     // more data.  
                     content = state.sb.ToString();
-                    if (content.IndexOf("\r") > -1)
+
+                    if (content.IndexOf(Convert.ToChar(3)) > -1)
                     {
                         // All the data has been read from the   
                         // client. Display it on the console.  
                         //Console.WriteLine("Read {0} bytes from socket. \n Data : {1}",
                         //    content.Length, content);
                         state.sb.Clear();
-                        _EventReport.On_Connection_Message(handler, content);
+                        string[] tmp = content.Split(Convert.ToChar(3));
+                        foreach (string each in tmp)
+                        {
+                            if (each.Trim().Equals(""))
+                            {
+                                continue;
+                            }
+                            _EventReport.On_Connection_Message(handler, each);
+                        }
                         //state.ClearBuffer();
                         handler.BeginReceive(state.buffer, 0, StateObject.BufferSize, 0,
                        new AsyncCallback(ReadCallback), state);
@@ -159,19 +168,22 @@ namespace sandalphon.Providers
 
         public void Send(Socket handler, String data)
         {
-            logger.Debug("EFEM Host Send : " + data);
-            // Convert the string data to byte data using ASCII encoding.  
-            byte[] byteData = Encoding.ASCII.GetBytes(data);
+            lock (handler)
+            {
+                logger.Debug("EFEM Host Send : " + data);
+                // Convert the string data to byte data using ASCII encoding.  
+                byte[] byteData = Encoding.ASCII.GetBytes(data);
 
-            // Begin sending the data to the remote device.  
-            try
-            {
-                handler.BeginSend(byteData, 0, byteData.Length, 0,
-                new AsyncCallback(SendCallback), handler);
-            }
-            catch (Exception e)
-            {
-                _EventReport.On_Connection_Disconnected();
+                // Begin sending the data to the remote device.  
+                try
+                {
+                    handler.BeginSend(byteData, 0, byteData.Length, 0,
+                    new AsyncCallback(SendCallback), handler);
+                }
+                catch (Exception e)
+                {
+                    _EventReport.On_Connection_Disconnected();
+                }
             }
         }
 

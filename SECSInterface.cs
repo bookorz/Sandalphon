@@ -29,7 +29,7 @@ namespace sandalphon
         public void On_Alarm_Happen(AlarmInfo Alarm)
         {
             string Event = "On_Alarm_Happend";
-            Comm.Send(_handler, JsonConvert.SerializeObject(new { Event, Alarm }, new JsonSerializerSettings() { StringEscapeHandling = StringEscapeHandling.EscapeNonAscii }) + "\r");
+            Comm.Send(_handler, JsonConvert.SerializeObject(new { Event, Alarm }, new JsonSerializerSettings() { StringEscapeHandling = StringEscapeHandling.EscapeNonAscii }) + Convert.ToChar(3));
             _Report.On_Alarm_Happen(Alarm);
         }
 
@@ -43,7 +43,7 @@ namespace sandalphon
             string Event = "On_Command_Excuted";
             if (Comm != null)
             {
-                Comm.Send(_handler, JsonConvert.SerializeObject(new { Event, Node, Txn, Msg }) + "\r");
+                Comm.Send(_handler, JsonConvert.SerializeObject(new { Event, Node, Txn, Msg }) + Convert.ToChar(3));
             }
             _Report.On_Command_Excuted(Node, Txn, Msg);
         }
@@ -53,7 +53,7 @@ namespace sandalphon
             string Event = "On_Command_Finished";
             if (Comm != null)
             {
-                Comm.Send(_handler, JsonConvert.SerializeObject(new { Event, Node, Txn, Msg }) + "\r");
+                Comm.Send(_handler, JsonConvert.SerializeObject(new { Event, Node, Txn, Msg }) + Convert.ToChar(3));
             }
             _Report.On_Command_Finished(Node, Txn, Msg);
         }
@@ -80,7 +80,7 @@ namespace sandalphon
             string Event = "On_Event_Trigger";
             if (Comm != null)
             {
-                Comm.Send(_handler, JsonConvert.SerializeObject(new { Event, Node, Msg }) + "\r");
+                Comm.Send(_handler, JsonConvert.SerializeObject(new { Event, Node, Msg }) + Convert.ToChar(3));
             }
             _Report.On_Event_Trigger(Node, Msg);
         }
@@ -115,7 +115,7 @@ namespace sandalphon
             string Event = "On_TaskJob_Aborted";
             if (Comm != null)
             {
-                Comm.Send(_handler, JsonConvert.SerializeObject(new { Event, Task, NodeName, ReportType, Message }) + "\r");
+                Comm.Send(_handler, JsonConvert.SerializeObject(new { Event, Task, NodeName, ReportType, Message }) + Convert.ToChar(3));
                 AlarmMessage AlarmMessage = AlarmMapping.Get("SYSTEM", Message);
             }
             _Report.On_TaskJob_Aborted(Task, NodeName, ReportType, Message);
@@ -126,7 +126,7 @@ namespace sandalphon
             string Event = "On_TaskJob_Ack";
             if (Comm != null)
             {
-                Comm.Send(_handler, JsonConvert.SerializeObject(new { Event, Task })+"\r");
+                Comm.Send(_handler, JsonConvert.SerializeObject(new { Event, Task })+ Convert.ToChar(3));
             }
             _Report.On_TaskJob_Ack(Task);
         }
@@ -136,7 +136,7 @@ namespace sandalphon
             string Event = "On_TaskJob_Finished";
             if (Comm != null)
             {
-                Comm.Send(_handler, JsonConvert.SerializeObject(new { Event, Task }) + "\r");
+                Comm.Send(_handler, JsonConvert.SerializeObject(new { Event, Task }) + Convert.ToChar(3));
             }
             _Report.On_TaskJob_Finished(Task);
         }
@@ -147,7 +147,7 @@ namespace sandalphon
             _handler = handler;
             string Event = "SystemConfig";
             SystemConfig SystemConfig = SystemConfig.Get();
-            Comm.Send(_handler, JsonConvert.SerializeObject(new { Event, SystemConfig }) + "\r");
+            Comm.Send(_handler, JsonConvert.SerializeObject(new { Event, SystemConfig }) + Convert.ToChar(3));
         }
 
         public void On_Connection_Connecting()
@@ -171,26 +171,36 @@ namespace sandalphon
 
         public void On_Connection_Message(Socket handler, string content)
         {
-            JObject restoredObject = JsonConvert.DeserializeObject<JObject>(content);
-            //JObject可使用LINQ方式存取
-            //var q = from p in restoredObject.Properties()
-            //        where p.Name == "Name"
-            //        select p;
-
-            switch (restoredObject.Property("Event").Value.ToString())
+            try
             {
-                case "NewTask":
-                    string Id = restoredObject.Property("Id").Value.ToString();
-                    TaskFlowManagement.Command taskName = JsonConvert.DeserializeObject<TaskFlowManagement.Command>(restoredObject.Property("TaskName").Value.ToString());
-                    Dictionary<string,string> param = JsonConvert.DeserializeObject<Dictionary<string, string>>(restoredObject.Property("param").Value.ToString());
-                    TaskFlowManagement.Excute(Id,taskName,param);
-                    break;
-                case "MessageLog":
-                    string Type = restoredObject.Property("Type").Value.ToString();
-                    string Message = restoredObject.Property("Message").Value.ToString();
-                    _Report.On_Message_Log(Type, Message);
-                    break;
+                JObject restoredObject = JsonConvert.DeserializeObject<JObject>(content);
+                //JObject可使用LINQ方式存取
+                //var q = from p in restoredObject.Properties()
+                //        where p.Name == "Name"
+                //        select p;
+
+                switch (restoredObject.Property("Event").Value.ToString())
+                {
+                    case "NewTask":
+                        string Id = restoredObject.Property("Id").Value.ToString();
+                        TaskFlowManagement.Command taskName = JsonConvert.DeserializeObject<TaskFlowManagement.Command>(restoredObject.Property("TaskName").Value.ToString());
+                        Dictionary<string, string> param = JsonConvert.DeserializeObject<Dictionary<string, string>>(restoredObject.Property("param").Value.ToString());
+                        TaskFlowManagement.Excute(Id, taskName, param);
+                        break;
+                    case "MessageLog":
+                        string Type = restoredObject.Property("Type").Value.ToString();
+                        string Message = restoredObject.Property("Message").Value.ToString();
+                        logger.Info(Type+":"+Message);
+                        _Report.On_Message_Log(Type, Message);
+                        break;
+                }
             }
+            catch (Exception e)
+            {
+                logger.Error(e.StackTrace);
+                logger.Debug(content);
+            }
+
         }
 
         public void NewTask(string Id, TaskFlowManagement.Command TaskName, Dictionary<string, string> param = null)
