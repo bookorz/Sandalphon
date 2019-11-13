@@ -19,7 +19,9 @@ const state = {
     Path: '1',
     WHR_Access_ILPT: null,
     Position: '0',
-    Direction: '0'
+    Direction: '0',
+    align_angle: '',
+    language: 'eng'
   }
 }
 
