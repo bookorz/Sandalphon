@@ -26,9 +26,8 @@ sync(store, router)
 Vue.use(signalrHub)
 
 // 取得預設語系
-const locale = window.localStorage.getItem('locale') || 'eng'
 const i18n = new VueI18n({
-  locale: locale,
+  locale: 'eng',
   messages: { eng, cht }
 })
 

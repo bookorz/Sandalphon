@@ -1,4 +1,4 @@
-﻿<template>
+<template>
     <div>
         <h1>Weather forecast</h1>
 
@@ -57,7 +57,7 @@ export default {
     return {
       forecasts: null,
       total: 0,
-      pageSize: 5,
+      pageSize: 15,
       currentPage: 1
     }
   },

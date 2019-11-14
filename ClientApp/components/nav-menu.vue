@@ -13,29 +13,30 @@
       <transition name="slide">
         <div :class="'collapse navbar-collapse' + (!collapsed ? ' show':'')" v-show="!collapsed">
           <ul class="navbar-nav">
-            <li class="nav-item">
+            <li class="nav-item" @click="collapsed=true">
               <router-link to="/" exact-active-class="active">
-                <icon icon="desktop" class="mr-2 menu-icon" /><span>{{$t('__nav_dashboard')}}</span>
+                <icon icon="desktop" class="mr-2 menu-icon" /><span>{{$t('nav.dashboard')}}</span>
               </router-link>
             </li>
-            <li class="nav-item">
+            <li class="nav-item" @click="collapsed=true">
               <router-link to="/about" exact-active-class="active">
-                <icon icon="info" class="mr-2 menu-icon" /><span>{{$t('__nav_showlog')}}</span>
+                <icon icon="info" class="mr-2 menu-icon" /><span>{{$t('nav.showlog')}}</span>
               </router-link>
             </li>
-            <li class="nav-item">
+            <li class="nav-item" @click="collapsed=true">
               <router-link to="/manual-control" exact-active-class="active">
-                <icon icon="user-cog" class="mr-2 menu-icon" /><span>{{$t('__nav_manualcontrol')}}</span>
+                <icon icon="user-cog" class="mr-2 menu-icon" /><span>{{$t('nav.manualcontrol')}}</span>
               </router-link>
             </li>
-            <li class="nav-item">
+            <li class="nav-item" @click="collapsed=true">
               <router-link to="/fetch-data" exact-active-class="active">
-                <icon icon="list" class="mr-2 menu-icon" /><span>{{$t('__nav_data')}}</span>
+                <icon icon="list" class="mr-2 menu-icon" /><span>{{$t('nav.data')}}</span>
               </router-link>
             </li>
             <li class="nav-item sidebar_button">
-              <b-form-group style="color:white" label="Language">
-
+              <button type="button" class="btn btn-info" v-show="!form.isLogin" @click="login">Login</button>
+              <button type="button" class="btn btn-info" v-show="form.isLogin" @click="logout">Logout</button>
+              <b-form-group style="color:white" :label="$t('nav.language')">
                 <b-form-select v-model="form.language" :options="lang_options" @change="switchLang(form.language)"></b-form-select>
               </b-form-group>
             </li>
@@ -48,11 +49,7 @@
 </template>
 
 <script>
-  import { mapActions, mapState } from 'vuex'
-  import ManualControl from 'components/manual-control'
-  import FetchData from 'components/fetch-data'
-  import HomePage from 'components/home-page'
-  import About from 'components/about'
+  import { mapActions, mapState, mapGetters } from 'vuex'
   export default {
     data() {
       return {
@@ -67,15 +64,35 @@
     computed: {
       ...mapState({
         form: state => state.form
-      })
+      }),
+      ...mapGetters(['form_get'])
+    },
+    watch: {
+      form_get: { // 深層監控vuex form有任何一個屬性改變，就存到localStorage
+        handler: function(val) {
+          this.setForm({ form: this.form })
+        },
+        deep: true
+      }
     },
     methods: {
+      ...mapActions(['setForm']),
       toggleCollapsed: function (event) {
         this.collapsed = !this.collapsed
       },
       switchLang(newLang) {
         this.$root.$i18n.locale = newLang
+      },
+      login() {
+        this.$router.push('/login');
+      },
+      logout() {
+        this.form.isLogin = false
+        this.$router.push('/');
       }
+    },
+    created() {
+      this.switchLang (this.form.language)
     }
   }
 </script>

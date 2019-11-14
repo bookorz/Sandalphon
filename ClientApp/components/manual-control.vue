@@ -93,9 +93,9 @@
             </b-row>
           </b-form-group>
         </b-card>
-        <b-card header="DEBUG Area" sub-title="">
+        <!--<b-card header="DEBUG Area" sub-title="">
           {{form}}
-        </b-card>
+        </b-card>-->
       </b-col>
       <b-col cols="8">
         <b-card-group deck>
@@ -278,7 +278,6 @@
         return /^\d{6}$/.test(this.form.align_angle)
       }
     },
-
     methods: {
       ...mapActions(['setForm']),
       async GetNodeList() {
@@ -371,6 +370,8 @@
       this.$signalrHub.$off('On_TaskJob_Finished', this.On_TaskJob_Finished)
       this.$signalrHub.$off('On_TaskJob_Aborted', this.On_TaskJob_Aborted)
       this.$signalrHub.$off('On_Alarm_Happen', this.On_Alarm_Happen)
+
+      //this.setForm({ form: this.form })
     }
   }
 </script>

@@ -10,7 +10,7 @@ const MAIN_SET_FORM = 'MAIN_SET_FORM'
 // STATE
 const state = {
   counter: 1,
-  form: {
+  form: JSON.parse(window.localStorage.form) || {
     ELPT: null,
     ILPT: null,
     Source: null,
@@ -21,10 +21,13 @@ const state = {
     Position: '0',
     Direction: '0',
     align_angle: '',
-    language: 'eng'
+    language: 'eng',
+    isLogin: false
   }
 }
-
+const getters = {
+  form_get: state => state.form
+}
 // MUTATIONS
 const mutations = {
   [MAIN_SET_COUNTER] (state, obj) {
@@ -32,7 +35,17 @@ const mutations = {
   },
   [MAIN_SET_FORM] (form, obj) {
     state.form = obj.form
+    // window.localStorage.setItem('form', JSON.stringify(obj.form))
   }
+}
+// 使用 Vuex 中的 plugins 來與 localStorage 結合將狀態保存在瀏覽器
+const localStoragePlugin = store => {
+  store.subscribe((mutation, { form }) => {
+    // 當執行 MAIN_SET_FORM 時才執行以下程式碼
+    if (mutation.type === MAIN_SET_FORM) {
+      window.localStorage.setItem('form', JSON.stringify(form))
+    }
+  })
 }
 
 // ACTIONS
@@ -48,5 +61,7 @@ const actions = ({
 export default new Vuex.Store({
   state,
   mutations,
-  actions
+  actions,
+  getters,
+  plugins: [localStoragePlugin]
 })

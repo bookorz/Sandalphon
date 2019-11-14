@@ -1,6 +1,18 @@
 export default {
-  __nav_dashboard: 'Dashboard',
-  __nav_showlog: 'Show Log',
-  __nav_manualcontrol: 'Manual Control',
-  __nav_data: 'Data'
+  nav: {
+    dashboard: 'Dashboard',
+    showlog: 'Show Log',
+    manualcontrol: 'Manual Control',
+    data: 'Data',
+    language: 'Language'
+  },
+  login: {
+    title: 'Please login',
+    userPlaceHolder: 'User name',
+    passwordPlaceHolder: 'Password',
+    rememberMeCheckbox: 'Remember me',
+    loginBotton: 'Login',
+    messageBoxContent: 'User name or password is incorrect',
+    messageBoxTitle: 'Error'
+  }
 }
