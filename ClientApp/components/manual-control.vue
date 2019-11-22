@@ -1,9 +1,8 @@
 <template>
   <div>
-
     <b-row>
       <b-col>
-        <b-card header="ELPT Command" bg-variant="dark" text-variant="white" sub-title="">
+        <b-card title="ELPT Command" bg-variant="dark" text-variant="white" sub-title="">
           <b-form-group>
             <b-form-select id="input-3"
                            v-model="form.ELPT"
@@ -11,44 +10,37 @@
                            required></b-form-select>
           </b-form-group>
           <b-form-group :disabled="form.ELPT==null">
-            <button type="button" class="btn btn-primary">Read RFID</button>
-            <button type="button" class="btn btn-secondary">Clamp</button>
-            <button type="button" class="btn btn-secondary">UnClamp</button>
+            <button type="button" class="btn btn-primary" @click="RunTask('ELPT_READ_RFID')">Read RFID</button>
+            <button type="button" class="btn btn-secondary" @click="RunTask('ELPT_CLAMP')">Clamp</button>
+            <button type="button" class="btn btn-secondary" @click="RunTask('ELPT_UNCLAMP')">UnClamp</button>
           </b-form-group>
           <b-form-group :disabled="form.ELPT==null">
-            <button type="button" class="btn btn-success">Open Shutter</button>
-            <button type="button" class="btn btn-success">Close Shutter</button>
+            <button type="button" class="btn btn-success" @click="RunTask('ELPT_OPEN_SHUTTER')">Open Shutter</button>
+            <button type="button" class="btn btn-success" @click="RunTask('ELPT_CLOSE_SHUTTER')">Close Shutter</button>
 
           </b-form-group>
           <b-form-group :disabled="form.ELPT==null">
-            <button type="button" class="btn btn-info">Move In</button>
-            <button type="button" class="btn btn-info">Move Out</button>
+            <button type="button" class="btn btn-info" @click="RunTask('ELPT_MOVE_IN')">Move In</button>
+            <button type="button" class="btn btn-info" @click="RunTask('ELPT_MOVE_OUT')">Move Out</button>
           </b-form-group>
           <b-form-group :disabled="form.ELPT==null">
-            <button type="button" class="btn btn-warning">Init</button>
-            <button type="button" class="btn btn-warning">Reset</button>
+            <button type="button" class="btn btn-warning" @click="RunTask('ELPT_INIT')">Init</button>
+            <button type="button" class="btn btn-warning" @click="RunTask('ELPT_RESET')">Reset</button>
           </b-form-group>
         </b-card>
 
-        <b-card header="ILPT Command" bg-variant="dark" text-variant="white" sub-title="">
+        <b-card title="ILPT Command" bg-variant="dark" text-variant="white" sub-title="">
           <b-form-group>
             <b-form-select id="input-4"
                            v-model="form.ILPT"
                            :options="ILPT_List"
                            required></b-form-select>
           </b-form-group>
-
-          <b-form-group :disabled="form.ILPT==null">
-            <button type="button" class="btn btn-primary">Dock</button>
-            <button type="button" class="btn btn-primary">UnDock</button>
-            <button type="button" class="btn btn-secondary">Clamp</button>
-            <button type="button" class="btn btn-secondary">UnClamp</button>
-          </b-form-group>
           <b-form-group :disabled="form.ILPT==null">
             <b-row>
               <b-col sm="5">
-                <button type="button" class="btn btn-success">Load</button>
-                <button type="button" class="btn btn-success">UnLoad</button>
+                <button type="button" class="btn btn-success" @click="RunTask('ILPT_LOAD')">Load</button>
+                <button type="button" class="btn btn-success" @click="RunTask('ILPT_UNLOAD')">UnLoad</button>
               </b-col>
               <b-col sm="7">
                 <div class="custom-control custom-checkbox">
@@ -59,11 +51,11 @@
             </b-row>
           </b-form-group>
           <b-form-group :disabled="form.ILPT==null">
-            <button type="button" class="btn btn-warning">Init</button>
-            <button type="button" class="btn btn-warning">Reset</button>
+            <button type="button" class="btn btn-warning" @click="RunTask('ILPT_INIT')">Init</button>
+            <button type="button" class="btn btn-warning" @click="RunTask('ILPT_RESET')">Reset</button>
           </b-form-group>
         </b-card>
-        <b-card header="FOUP Robot Command" bg-variant="dark" text-variant="white" sub-title="">
+        <b-card title="FOUP Robot Command" bg-variant="dark" text-variant="white" sub-title="">
           <b-form-group>
             <b-row>
               <b-col sm="5">
@@ -73,8 +65,8 @@
                                required></b-form-select>
               </b-col>
               <b-col sm="7">
-                <button type="button" class="btn btn-primary" :disabled="form.Source==null">Prepare Pick</button>
-                <button type="button" class="btn btn-primary" :disabled="form.Source==null">Pick</button>
+                <button type="button" class="btn btn-primary" :disabled="form.Source==null" @click="RunTask('FOUPROBOT_PREPARE_PICK')">Prepare Pick</button>
+                <button type="button" class="btn btn-primary" :disabled="form.Source==null" @click="RunTask('FOUPROBOT_PICK')">Pick</button>
               </b-col>
             </b-row>
           </b-form-group>
@@ -87,10 +79,34 @@
                                required></b-form-select>
               </b-col>
               <b-col sm="7">
-                <button type="button" class="btn btn-primary" :disabled="form.Destination==null">Prepare Place</button>
-                <button type="button" class="btn btn-primary" :disabled="form.Destination==null">Place</button>
+                <button type="button" class="btn btn-primary" :disabled="form.Destination==null" @click="RunTask('FOUPROBOT_PREPARE_PLACE')">Prepare Place</button>
+                <button type="button" class="btn btn-primary" :disabled="form.Destination==null" @click="RunTask('FOUPROBOT_PLACE')">Place</button>
               </b-col>
             </b-row>
+          </b-form-group>
+          <b-form-group>
+            <b-row>
+              <b-col sm="5">
+                <b-form-input id="input-live"
+                              v-model="form.foup_robot_speed"
+                              :state="FoupRobotSpeedState"
+                              aria-describedby="input-live-help input-live-feedback"
+                              placeholder="Speed %"
+                              trim></b-form-input>
+
+                <!-- This will only be shown if the preceding input has an invalid state -->
+                <!--<b-form-invalid-feedback id="input-live-feedback">
+                  Enter 1~100
+                </b-form-invalid-feedback>-->
+              </b-col>
+              <b-col sm="7">
+                <button type="button" class="btn btn-warning" :disabled="!FoupRobotSpeedState" @click="RunTask('FOUPROBOT_SET_SPEED')">Set</button>
+              </b-col>
+            </b-row>
+          </b-form-group>
+          <b-form-group>
+            <button type="button" class="btn btn-warning" @click="RunTask('FOUPROBOT_INIT')">Init</button>
+            <button type="button" class="btn btn-warning" @click="RunTask('FOUPROBOT_RESET')">Reset</button>
           </b-form-group>
         </b-card>
         <!--<b-card header="DEBUG Area" sub-title="">
@@ -99,14 +115,34 @@
       </b-col>
       <b-col cols="8">
         <b-card-group deck>
-          <b-card header="WHR Command" bg-variant="dark" text-variant="white" sub-title="" class=" col-9">
+          <b-card title="WHR Command" bg-variant="dark" text-variant="white" sub-title="" class=" col-9">
             <b-form-group>
-              <button type="button" class="btn btn-warning" @click="RunTask('WHR_RETRACT')">WHR Retract</button>
-              <button type="button" class="btn btn-warning" @click="RunTask('WHR_SHOME')">WHR Safty Home</button>
-              <button type="button" class="btn btn-warning" @click="RunTask('WHR_RESET')">WHR Reset</button>
+              <b-row>
+                <b-col sm="6">
+                  <button type="button" class="btn btn-warning" @click="RunTask('WHR_RETRACT')">Retract</button>
+                  <button type="button" class="btn btn-warning" @click="RunTask('WHR_SHOME')">Safty Home</button>
+                  <button type="button" class="btn btn-warning" @click="RunTask('WHR_RESET')">Reset</button>
+                </b-col>
+                <b-col sm="4">
+                  <b-form-input id="input-live"
+                                v-model="form.whr_speed"
+                                :state="WHRSpeedState"
+                                aria-describedby="input-live-help input-live-feedback"
+                                placeholder="Speed %"
+                                trim></b-form-input>
+
+                  <!-- This will only be shown if the preceding input has an invalid state -->
+                  <!--<b-form-invalid-feedback id="input-live-feedback">
+                    Enter 1~100
+                  </b-form-invalid-feedback>-->
+                </b-col>
+                <b-col sm="2">
+                  <button type="button" class="btn btn-warning" :disabled="!WHRSpeedState" @click="RunTask('WHR_SET_SPEED')">Set</button>
+                </b-col>
+              </b-row>
             </b-form-group>
           </b-card>
-          <b-card header="Path" bg-variant="dark" text-variant="white" sub-title="" class=" col-3">
+          <b-card title="Path" bg-variant="dark" text-variant="white" sub-title="" class=" col-3">
             <b-form-radio-group id="radio-group-8"
                                 v-model="form.Path"
                                 :options="Paths"
@@ -116,7 +152,7 @@
 
 
 
-        <b-card header="WHR Access ILPT Command" bg-variant="dark" text-variant="white" sub-title="">
+        <b-card title="WHR Access ILPT Command" bg-variant="dark" text-variant="white" sub-title="">
           <b-form-group>
             <b-row>
               <b-col sm="4">
@@ -136,7 +172,7 @@
             </b-row>
           </b-form-group>
         </b-card>
-        <b-card header="WHR Access CTU Command" bg-variant="dark" text-variant="white" sub-title="">
+        <b-card title="WHR Access CTU Command" bg-variant="dark" text-variant="white" sub-title="">
           <b-form-group>
             <button type="button" class="btn btn-success" @click="RunTask('CTU_PREPAREPICK_WHR')">CTU Prepare Pick</button><!-- From WHR -->
             <button type="button" class="btn btn-success" @click="RunTask('WHR_PREPAREPLACE_CTU')">WHR Prepare Place</button><!-- to CTU -->
@@ -155,20 +191,60 @@
           </b-form-group>
         </b-card>
         <b-card-group deck>
-          <b-card header="CTU Command" bg-variant="dark" text-variant="white" sub-title="">
+          <b-card title="CTU Command" bg-variant="dark" text-variant="white" sub-title="">
             <b-form-group>
               <button type="button" class="btn btn-warning" @click="RunTask('CTU_HOME')">Home</button>
               <button type="button" class="btn btn-warning" @click="RunTask('CTU_RESET')">Reset</button>
               <button type="button" class="btn btn-warning" @click="RunTask('CTU_INIT')">Initial</button>
             </b-form-group>
+            <b-form-group>
+              <b-row>
+                <b-col sm="8">
+                  <b-form-input id="input-live"
+                                v-model="form.ctu_speed"
+                                :state="CTUSpeedState"
+                                aria-describedby="input-live-help input-live-feedback"
+                                placeholder="Speed %"
+                                trim></b-form-input>
+
+                  <!-- This will only be shown if the preceding input has an invalid state -->
+                  <!--<b-form-invalid-feedback id="input-live-feedback">
+                    Enter 1~100
+                  </b-form-invalid-feedback>-->
+                </b-col>
+                <b-col sm="4">
+                  <button type="button" class="btn btn-warning" :disabled="!CTUSpeedState" @click="RunTask('CTU_SET_SPEED')">Set</button>
+                </b-col>
+              </b-row>
+            </b-form-group>
           </b-card>
-          <b-card header="PTZ Command" bg-variant="dark" text-variant="white" sub-title="">
+          <b-card title="PTZ Command" bg-variant="dark" text-variant="white" sub-title="">
             <b-form-group>
               <button type="button" class="btn btn-warning" @click="RunTask('PTZ_HOME')">Home</button>
               <button type="button" class="btn btn-warning">Reset</button>
             </b-form-group>
+            <b-form-group>
+              <b-row>
+                <b-col sm="8">
+                  <b-form-input id="input-live"
+                                v-model="form.ptz_speed"
+                                :state="PTZSpeedState"
+                                aria-describedby="input-live-help input-live-feedback"
+                                placeholder="Speed %"
+                                trim></b-form-input>
+
+                  <!-- This will only be shown if the preceding input has an invalid state -->
+                  <!--<b-form-invalid-feedback id="input-live-feedback">
+                    Enter 1~100
+                  </b-form-invalid-feedback>-->
+                </b-col>
+                <b-col sm="4">
+                  <button type="button" class="btn btn-warning" :disabled="!PTZSpeedState" @click="RunTask('PTZ_SET_SPEED')">Set</button>
+                </b-col>
+              </b-row>
+            </b-form-group>
           </b-card>
-          <b-card header="ALIGNER Command" bg-variant="dark" text-variant="white" sub-title="">
+          <b-card title="ALIGNER Command" bg-variant="dark" text-variant="white" sub-title="">
             <b-form-group>
               <b-row>
                 <b-col sm="8">
@@ -189,9 +265,29 @@
                 </b-col>
               </b-row>
             </b-form-group>
+            <b-form-group>
+              <b-row>
+                <b-col sm="8">
+                  <b-form-input id="input-live"
+                                v-model="form.aligner_speed"
+                                :state="AlignerSpeedState"
+                                aria-describedby="input-live-help input-live-feedback"
+                                placeholder="Speed %"
+                                trim></b-form-input>
+
+                  <!-- This will only be shown if the preceding input has an invalid state -->
+                  <!--<b-form-invalid-feedback id="input-live-feedback">
+                    Enter 1~100
+                  </b-form-invalid-feedback>-->
+                </b-col>
+                <b-col sm="4">
+                  <button type="button" class="btn btn-warning" :disabled="!AlignerSpeedState" @click="RunTask('WTSALIGNER_SET_SPEED')">Set</button>
+                </b-col>
+              </b-row>
+            </b-form-group>
           </b-card>
         </b-card-group>
-        <b-card header="CTU Access PTZ Command" bg-variant="dark" text-variant="white" sub-title="">
+        <b-card title="CTU Access PTZ Command" bg-variant="dark" text-variant="white" sub-title="">
 
           <b-form-group label="Position">
             <b-form-radio-group id="radio-group-1"
@@ -250,8 +346,8 @@
       return {
         msg: "Loading...",
         spinnerStatus: false,
-        ELPT_List: [{ text: 'Select ELPT', value: null }, 'ELPT1', 'ELPT2'],
-        ILPT_List: [{ text: 'Select ILPT', value: null }, 'ILPT1', 'ILPT2'],
+        ELPT_List: [{ text: 'Select ELPT', value: null }, { text: 'ELPT1', value: 'ELPT1' }, { text: 'ELPT2', value: 'ELPT2' }],
+        ILPT_List: [{ text: 'Select ILPT', value: null }, { text: 'ILPT1', value: 'ILPT1' }, { text: 'ILPT2', value: 'ILPT2' }],
         Source_List: [{ text: 'Source', value: null }, 'ILPT1', 'ILPT2', 'ELPT1', 'ELPT2', 'SHELF1', 'SHELF2', 'SHELF3', 'SHELF4', 'SHELF5', 'SHELF6', 'SHELF7', 'SHELF8', 'SHELF9', 'SHELF10', 'SHELF11', 'SHELF12', 'SHELF13', 'SHELF14', 'SHELF15', 'SHELF16'],
         Destination_List: [{ text: 'Destination', value: null }, 'ILPT1', 'ILPT2', 'ELPT1', 'ELPT2', 'SHELF1', 'SHELF2', 'SHELF3', 'SHELF4', 'SHELF5', 'SHELF6', 'SHELF7', 'SHELF8', 'SHELF9', 'SHELF10', 'SHELF11', 'SHELF12', 'SHELF13', 'SHELF14', 'SHELF15', 'SHELF16'],
         Paths: [{ text: 'Clean', value: 0 }, { text: 'Dirty', value: 1 }],
@@ -276,6 +372,21 @@
       }),
       AngleState() {
         return /^\d{6}$/.test(this.form.align_angle)
+      },
+      FoupRobotSpeedState() {
+        return /^(100)$|^(\d{1,2})$/.test(this.form.foup_robot_speed)
+      },
+      WHRSpeedState() {
+        return /^(100)$|^(\d{1,2})$/.test(this.form.whr_speed)
+      },
+      CTUSpeedState() {
+        return /^(100)$|^(\d{1,2})$/.test(this.form.ctu_speed)
+      },
+      PTZSpeedState() {
+        return /^(100)$|^(\d{1,2})$/.test(this.form.ptz_speed)
+      },
+      AlignerSpeedState() {
+        return /^(100)$|^(\d{1,2})$/.test(this.form.aligner_speed)
       }
     },
     methods: {
@@ -291,9 +402,54 @@
         var direction = this.form.Direction
         var value = ''
         var position = ''
-
+        var val2 = ''
 
         switch (TaskName) {
+          case 'FOUPROBOT_SET_SPEED':
+            value = this.form.foup_robot_speed
+            break;
+          case 'CTU_SET_SPEED':
+            value = this.form.ctu_speed
+            break;
+          case 'PTZ_SET_SPEED':
+            value = this.form.ptz_speed
+            break;
+          case 'WHR_SET_SPEED':
+            value = this.form.whr_speed
+            break;
+          case 'WTSALIGNER_SET_SPEED':
+            value = this.form.aligner_speed
+            break;
+          case 'ELPT_READ_RFID':
+          case 'ELPT_CLAMP':
+          case 'ELPT_UNCLAMP':
+          case 'ELPT_OPEN_SHUTTER':
+          case 'ELPT_CLOSE_SHUTTER':
+          case 'ELPT_MOVE_IN':
+          case 'ELPT_MOVE_OUT':
+          case 'ELPT_INIT':
+          case 'ELPT_RESET':
+            target = this.form.ELPT
+            break;
+          case 'ILPT_LOAD':
+            target = this.form.ILPT
+            value = this.form.WithMapping ? '1' : '0'
+            val2 = this.form.ILPT == 'ILPT1' ? '1' : '2'
+            break;
+          case 'ILPT_UNLOAD':
+          case 'ILPT_INIT':
+          case 'ILPT_RESET':
+            target = this.form.ILPT
+            val2 = this.form.ILPT == 'ILPT1' ? '1' : '2'
+            break;
+          case 'FOUPROBOT_PREPARE_PICK':
+          case 'FOUPROBOT_PICK':
+            position = this.form.Source
+            break;
+          case 'FOUPROBOT_PREPARE_PLACE':
+          case 'FOUPROBOT_PLACE':
+            position = this.form.Destination
+            break;
           case 'WHR_PREPAREPICK':
             position = this.form.WHR_Access_ILPT
             break
@@ -335,7 +491,7 @@
             value = this.form.align_angle
             break;
         }
-        this.$http.post('/api/Transfer/TaskRun', { name: TaskName, target: target, mode: mode, station: station, direction: direction, value: value, position: position })
+        this.$http.post('/api/Transfer/TaskRun', { name: TaskName, target: target, mode: mode, station: station, direction: direction, value: value, position: position, val2: val2 })
 
       },
       On_TaskJob_Ack(data) {

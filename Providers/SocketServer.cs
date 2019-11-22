@@ -168,21 +168,24 @@ namespace sandalphon.Providers
 
         public void Send(Socket handler, String data)
         {
-            lock (handler)
+            if (handler != null)
             {
-                logger.Debug("EFEM Host Send : " + data);
-                // Convert the string data to byte data using ASCII encoding.  
-                byte[] byteData = Encoding.ASCII.GetBytes(data);
+                lock (handler)
+                {
+                    logger.Debug("EFEM Host Send : " + data);
+                    // Convert the string data to byte data using ASCII encoding.  
+                    byte[] byteData = Encoding.ASCII.GetBytes(data);
 
-                // Begin sending the data to the remote device.  
-                try
-                {
-                    handler.BeginSend(byteData, 0, byteData.Length, 0,
-                    new AsyncCallback(SendCallback), handler);
-                }
-                catch (Exception e)
-                {
-                    _EventReport.On_Connection_Disconnected();
+                    // Begin sending the data to the remote device.  
+                    try
+                    {
+                        handler.BeginSend(byteData, 0, byteData.Length, 0,
+                        new AsyncCallback(SendCallback), handler);
+                    }
+                    catch (Exception e)
+                    {
+                        _EventReport.On_Connection_Disconnected();
+                    }
                 }
             }
         }

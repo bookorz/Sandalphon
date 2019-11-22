@@ -10,20 +10,26 @@ const MAIN_SET_FORM = 'MAIN_SET_FORM'
 // STATE
 const state = {
   counter: 1,
-  form: JSON.parse(window.localStorage.form) || {
-    ELPT: null,
-    ILPT: null,
-    Source: null,
-    Destination: null,
-    WithMapping: true,
-    Path: '1',
-    WHR_Access_ILPT: null,
-    Position: '0',
-    Direction: '0',
-    align_angle: '',
-    language: 'eng',
-    isLogin: false
-  }
+  form: JSON.parse(window.localStorage.form ||
+    JSON.stringify({
+      ELPT: null,
+      ILPT: null,
+      Source: null,
+      Destination: null,
+      WithMapping: true,
+      Path: '1',
+      WHR_Access_ILPT: null,
+      Position: '0',
+      Direction: '0',
+      align_angle: '',
+      language: 'eng',
+      isLogin: false,
+      foup_robot_speed: '',
+      whr_speed: '',
+      ctu_speed: '',
+      ptz_speed: '',
+      aligner_speed: ''
+    }))
 }
 const getters = {
   form_get: state => state.form

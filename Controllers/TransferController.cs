@@ -15,6 +15,7 @@ namespace sandalphon.Controllers
             public string Name { get; set; }
             public string Target { get; set; }
             public string Value { get; set; }
+            public string Val2 { get; set; }
             public string Position { get; set; }
             public string Mode { get; set; }
             public string Station { get; set; }
@@ -26,6 +27,7 @@ namespace sandalphon.Controllers
             Dictionary<string, string> param = new Dictionary<string, string>();
             param.Add("@Target", req.Target);
             param.Add("@Value", req.Value);
+            param.Add("@Val2", req.Val2);
             param.Add("@Position", req.Position);
             param.Add("@Mode", req.Mode);
             param.Add("@Station", req.Station);
