@@ -371,7 +371,7 @@
         form: state => state.form
       }),
       AngleState() {
-        return /^\d{6}$/.test(this.form.align_angle)
+        return /^([012]?[0-9]?[0-9]|3[0-5][0-9])$/.test(this.form.align_angle)
       },
       FoupRobotSpeedState() {
         return /^(100)$|^(\d{1,2})$/.test(this.form.foup_robot_speed)
