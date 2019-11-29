@@ -451,6 +451,9 @@
             position = this.form.Destination
             break;
           case 'WHR_PREPAREPICK':
+          case 'WHR_PICK':
+          case 'WHR_PREPAREPLACE':
+          case 'WHR_PLACE':
             position = this.form.WHR_Access_ILPT
             break
           case 'WHR_PREPAREPICK_CTU':
