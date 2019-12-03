@@ -92,5 +92,31 @@ namespace sandalphon.Controllers
                 }
             }
         }
+        [HttpGet("[action]")]
+        public IActionResult AlarmHistory([FromQuery(Name = "from")] int from = 0, [FromQuery(Name = "to")] int to = 4)
+        {
+            //System.Threading.Thread.Sleep(500); // Fake latency
+            var quantity = to - from;
+
+            // We should also avoid going too far in the list.
+            if (quantity <= 0)
+            {
+                return BadRequest("You cannot have the 'to' parameter higher than 'from' parameter.");
+            }
+
+            if (from < 0)
+            {
+                return BadRequest("You cannot go in the negative with the 'from' parameter");
+            }
+
+            var allAlarm = AlarmManagement.GetHistory();
+            var result = new
+            {
+                Total = allAlarm.Count,
+                alarmList = allAlarm.Skip(from).Take(quantity).ToArray()
+            };
+
+            return Ok(result);
+        }
     }
 }

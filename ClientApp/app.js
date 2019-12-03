@@ -17,6 +17,7 @@ import cht from './i18n/zh-tw'
 Vue.use(BootstrapVue)
 Vue.use(BlockUI)
 Vue.use(VueI18n)
+Vue.use(require('vue-moment'))
 // Registration of global components
 Vue.component('icon', FontAwesomeIcon)
 

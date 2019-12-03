@@ -3,7 +3,7 @@ export default {
     dashboard: 'Dashboard',
     showlog: 'Show Log',
     manualcontrol: 'Manual Control',
-    data: 'Data',
+    alarmhistory: 'Alarm History',
     language: 'Language'
   },
   login: {
@@ -14,5 +14,13 @@ export default {
     loginBotton: 'Login',
     messageBoxContent: 'User name or password is incorrect',
     messageBoxTitle: 'Error'
+  },
+  almhis: {
+    header: 'Alarm History',
+    controller: 'Controller',
+    node_name: 'Node Name',
+    err_code: 'Error Code',
+    err_desc: 'Error Description',
+    timestamp: 'Timestamp'
   }
 }

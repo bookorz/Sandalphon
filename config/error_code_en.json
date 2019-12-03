@@ -1,0 +1,866 @@
+[
+  {
+    "Controller": "STK_CONTROLLER",
+    "AddressNo": "0",
+    "ErrorCode": "91800300",
+    "ErrorDesc": "STOCKER Z-AXIS STALL(Static)",
+    "ALID": "1006",
+    "ALTX": "STOCKER Z-AXIS STALL"
+  },
+  {
+    "Controller": "STK_CONTROLLER",
+    "AddressNo": "0",
+    "ErrorCode": "91809300",
+    "ErrorDesc": "STOCKER Z-AXIS STALL(Dynamic)",
+    "ALID": "1006",
+    "ALTX": "STOCKER Z-AXIS STALL"
+  },
+  {
+    "Controller": "STK_CONTROLLER",
+    "AddressNo": "0",
+    "ErrorCode": "84803300",
+    "ErrorDesc": "STOCKER Z-AXIS TIMEOUT",
+    "ALID": "1008",
+    "ALTX": "STOCKER Z-AXIS TIMEOUT"
+  },
+  {
+    "Controller": "STK_CONTROLLER",
+    "AddressNo": "0",
+    "ErrorCode": "91800400",
+    "ErrorDesc": "STOCKER X-AXIS STALL(Static)",
+    "ALID": "1010",
+    "ALTX": "STOCKER X-AXIS STALL"
+  },
+  {
+    "Controller": "STK_CONTROLLER",
+    "AddressNo": "0",
+    "ErrorCode": "91809400",
+    "ErrorDesc": "STOCKER X-AXIS STALL(Dynamic)",
+    "ALID": "1010",
+    "ALTX": "STOCKER X-AXIS STALL"
+  },
+  {
+    "Controller": "STK_CONTROLLER",
+    "AddressNo": "0",
+    "ErrorCode": "84803400",
+    "ErrorDesc": "STOCKER X-AXIS TIMEOUT",
+    "ALID": "1012",
+    "ALTX": "STOCKER X-AXIS TIMEOUT"
+  },
+  {
+    "Controller": "STK_CONTROLLER",
+    "AddressNo": "0",
+    "ErrorCode": "84803000",
+    "ErrorDesc": "STOCKER R-AXIS STALL(Static)",
+    "ALID": "1014",
+    "ALTX": "STOCKER R-AXIS STALL"
+  },
+  {
+    "Controller": "STK_CONTROLLER",
+    "AddressNo": "0",
+    "ErrorCode": "91809000",
+    "ErrorDesc": "STOCKER R-AXIS STALL(Dynamic)",
+    "ALID": "1014",
+    "ALTX": "STOCKER R-AXIS STALL"
+  },
+  {
+    "Controller": "STK_CONTROLLER",
+    "AddressNo": "0",
+    "ErrorCode": "84803000",
+    "ErrorDesc": "STOCKER R-AXIS TIMEOUT",
+    "ALID": "1016",
+    "ALTX": "STOCKER R-AXIS TIMEOUT"
+  },
+  {
+    "Controller": "STK_CONTROLLER",
+    "AddressNo": "1",
+    "ErrorCode": "91800500",
+    "ErrorDesc": "STOCKER ELPT1 SHUTTLE STALL(Static)",
+    "ALID": "1022",
+    "ALTX": "STOCKER ELPT1 SHUTTLE STALL"
+  },
+  {
+    "Controller": "STK_CONTROLLER",
+    "AddressNo": "1",
+    "ErrorCode": "91809500",
+    "ErrorDesc": "STOCKER ELPT1 SHUTTLE STALL(Dynamic)",
+    "ALID": "1022",
+    "ALTX": "STOCKER ELPT1 SHUTTLE STALL"
+  },
+  {
+    "Controller": "STK_CONTROLLER",
+    "AddressNo": "1",
+    "ErrorCode": "84803500",
+    "ErrorDesc": "STOCKER ELPT2 SHUTTLE TIMEOUT",
+    "ALID": "1024",
+    "ALTX": "STOCKER ELPT2 SHUTTLE TIMEOUT"
+  },
+  {
+    "Controller": "STK_CONTROLLER",
+    "AddressNo": "2",
+    "ErrorCode": "91800600",
+    "ErrorDesc": "STOCKER ELPT2 SHUTTLE STALL(Static)",
+    "ALID": "1026",
+    "ALTX": "STOCKER ELPT2 SHUTTLE STALL"
+  },
+  {
+    "Controller": "STK_CONTROLLER",
+    "AddressNo": "2",
+    "ErrorCode": "91809600",
+    "ErrorDesc": "STOCKER ELPT2 SHUTTLE STALL(Dynamic)",
+    "ALID": "1026",
+    "ALTX": "STOCKER ELPT2 SHUTTLE STALL"
+  },
+  {
+    "Controller": "STK_CONTROLLER",
+    "AddressNo": "2",
+    "ErrorCode": "84803600",
+    "ErrorDesc": "STOCKER ELPT2 SHUTTLE TIMEOUT",
+    "ALID": "1028",
+    "ALTX": "STOCKER ELPT2 SHUTTLE TIMEOUT"
+  },
+  {
+    "Controller": "WHR_CONTROLLER",
+    "AddressNo": "0",
+    "ErrorCode": "91800200",
+    "ErrorDesc": "WTS WHR T-AXIS STALL(Static)",
+    "ALID": "1106",
+    "ALTX": "WTS WHR T-AXIS STALL"
+  },
+  {
+    "Controller": "WHR_CONTROLLER",
+    "AddressNo": "0",
+    "ErrorCode": "91809200",
+    "ErrorDesc": "WTS WHR T-AXIS STALL(Dynamic)",
+    "ALID": "1106",
+    "ALTX": "WTS WHR T-AXIS STALL"
+  },
+  {
+    "Controller": "WHR_CONTROLLER",
+    "AddressNo": "0",
+    "ErrorCode": "84803200",
+    "ErrorDesc": "WTS WHR T-AXIS TIMEOUT",
+    "ALID": "1108",
+    "ALTX": "WTS WHR T-AXIS TIMEOUT"
+  },
+  {
+    "Controller": "WHR_CONTROLLER",
+    "AddressNo": "0",
+    "ErrorCode": "91800000",
+    "ErrorDesc": "WTS WHR R-AXIS STALL(Static)",
+    "ALID": "1110",
+    "ALTX": "WTS WHR R-AXIS STALL"
+  },
+  {
+    "Controller": "WHR_CONTROLLER",
+    "AddressNo": "0",
+    "ErrorCode": "91809000",
+    "ErrorDesc": "WTS WHR R-AXIS STALL(Dynamic)",
+    "ALID": "1110",
+    "ALTX": "WTS WHR R-AXIS STALL"
+  },
+  {
+    "Controller": "WHR_CONTROLLER",
+    "AddressNo": "0",
+    "ErrorCode": "84803000",
+    "ErrorDesc": "WTS WHR R-AXIS TIMEOUT",
+    "ALID": "1112",
+    "ALTX": "WTS WHR R-AXIS TIMEOUT"
+  },
+  {
+    "Controller": "WHR_CONTROLLER",
+    "AddressNo": "0",
+    "ErrorCode": "91800400",
+    "ErrorDesc": "WTS WHR X-AXIS STALL(Static)",
+    "ALID": "1116",
+    "ALTX": "WTS WHR X-AXIS STALL"
+  },
+  {
+    "Controller": "WHR_CONTROLLER",
+    "AddressNo": "0",
+    "ErrorCode": "91809400",
+    "ErrorDesc": "WTS WHR X-AXIS STALL(Dynamic)",
+    "ALID": "1116",
+    "ALTX": "WTS WHR X-AXIS STALL"
+  },
+  {
+    "Controller": "WHR_CONTROLLER",
+    "AddressNo": "0",
+    "ErrorCode": "84803400",
+    "ErrorDesc": "WTS WHR X-AXIS TIMEOUT",
+    "ALID": "1118",
+    "ALTX": "WTS WHR X-AXIS TIMEOUT"
+  },
+  {
+    "Controller": "WHR_CONTROLLER",
+    "AddressNo": "0",
+    "ErrorCode": "91800300",
+    "ErrorDesc": "WTS WHR Z-AXIS STALL(Static)",
+    "ALID": "1120",
+    "ALTX": "WTS WHR Z-AXIS STALL"
+  },
+  {
+    "Controller": "WHR_CONTROLLER",
+    "AddressNo": "0",
+    "ErrorCode": "91809300",
+    "ErrorDesc": "WTS WHR Z-AXIS STALL(Dynamic)",
+    "ALID": "1120",
+    "ALTX": "WTS WHR Z-AXIS STALL"
+  },
+  {
+    "Controller": "WHR_CONTROLLER",
+    "AddressNo": "0",
+    "ErrorCode": "84803300",
+    "ErrorDesc": "WTS WHR Z-AXIS TIMEOUT",
+    "ALID": "1122",
+    "ALTX": "WTS WHR Z-AXIS TIMEOUT"
+  },
+  {
+    "Controller": "CTU_CONTROLLER",
+    "AddressNo": "1",
+    "ErrorCode": "91800300",
+    "ErrorDesc": "WTS CTU Z-AXIS STALL(Static)",
+    "ALID": "1124",
+    "ALTX": "WTS CTU Z-AXIS STALL"
+  },
+  {
+    "Controller": "CTU_CONTROLLER",
+    "AddressNo": "1",
+    "ErrorCode": "91809300",
+    "ErrorDesc": "WTS CTU Z-AXIS STALL(Dynamic)",
+    "ALID": "1124",
+    "ALTX": "WTS CTU Z-AXIS STALL"
+  },
+  {
+    "Controller": "CTU_CONTROLLER",
+    "AddressNo": "1",
+    "ErrorCode": "84803300",
+    "ErrorDesc": "WTS CTU Z-AXIS TIMEOUT",
+    "ALID": "1126",
+    "ALTX": "WTS CTU Z-AXIS TIMEOUT"
+  },
+  {
+    "Controller": "CTU_CONTROLLER",
+    "AddressNo": "1",
+    "ErrorCode": "91800200",
+    "ErrorDesc": "WTS CTU T-AXIS STALL(Static)",
+    "ALID": "1130",
+    "ALTX": "WTS CTU T-AXIS STALL"
+  },
+  {
+    "Controller": "CTU_CONTROLLER",
+    "AddressNo": "1",
+    "ErrorCode": "91809200",
+    "ErrorDesc": "WTS CTU T-AXIS STALL(Dynamic)",
+    "ALID": "1130",
+    "ALTX": "WTS CTU T-AXIS STALL"
+  },
+  {
+    "Controller": "CTU_CONTROLLER",
+    "AddressNo": "1",
+    "ErrorCode": "84803200",
+    "ErrorDesc": "WTS CTU T-AXIS TIMEOUT",
+    "ALID": "1132",
+    "ALTX": "WTS CTU T-AXIS TIMEOUT"
+  },
+  {
+    "Controller": "CTU_CONTROLLER",
+    "AddressNo": "1",
+    "ErrorCode": "91800500",
+    "ErrorDesc": "WTS CTU GRIPPER1 STALL(Static)",
+    "ALID": "1136",
+    "ALTX": "WTS CTU GRIPPER STALL"
+  },
+  {
+    "Controller": "CTU_CONTROLLER",
+    "AddressNo": "1",
+    "ErrorCode": "91809500",
+    "ErrorDesc": "WTS CTU GRIPPER1 STALL(Dynamic)",
+    "ALID": "1136",
+    "ALTX": "WTS CTU GRIPPER STALL"
+  },
+  {
+    "Controller": "CTU_CONTROLLER",
+    "AddressNo": "1",
+    "ErrorCode": "84803500",
+    "ErrorDesc": "WTS CTU GRIPPER1 TIMEOUT",
+    "ALID": "1138",
+    "ALTX": "WTS CTU GRIPPER TIMEOUT"
+  },
+  {
+    "Controller": "CTU_CONTROLLER",
+    "AddressNo": "1",
+    "ErrorCode": "91800600",
+    "ErrorDesc": "WTS CTU GRIPPER2 STALL(Static)",
+    "ALID": "1136",
+    "ALTX": "WTS CTU GRIPPER STALL"
+  },
+  {
+    "Controller": "CTU_CONTROLLER",
+    "AddressNo": "1",
+    "ErrorCode": "91809600",
+    "ErrorDesc": "WTS CTU GRIPPER2 STALL(Dynamic)",
+    "ALID": "1136",
+    "ALTX": "WTS CTU GRIPPER STALL"
+  },
+  {
+    "Controller": "CTU_CONTROLLER",
+    "AddressNo": "1",
+    "ErrorCode": "84803600",
+    "ErrorDesc": "WTS CTU GRIPPER2 TIMEOUT",
+    "ALID": "1138",
+    "ALTX": "WTS CTU GRIPPER TIMEOUT"
+  },
+  {
+    "Controller": "CTU_CONTROLLER",
+    "AddressNo": "1",
+    "ErrorCode": "91800700",
+    "ErrorDesc": "WTS CTU GRIPPER3 STALL(Static)",
+    "ALID": "1136",
+    "ALTX": "WTS CTU GRIPPER STALL"
+  },
+  {
+    "Controller": "CTU_CONTROLLER",
+    "AddressNo": "1",
+    "ErrorCode": "91809700",
+    "ErrorDesc": "WTS CTU GRIPPER3 STALL(Dynamic)",
+    "ALID": "1136",
+    "ALTX": "WTS CTU GRIPPER STALL"
+  },
+  {
+    "Controller": "CTU_CONTROLLER",
+    "AddressNo": "1",
+    "ErrorCode": "84803700",
+    "ErrorDesc": "WTS CTU GRIPPER3 TIMEOUT",
+    "ALID": "1138",
+    "ALTX": "WTS CTU GRIPPER TIMEOUT"
+  },
+  {
+    "Controller": "CTU_CONTROLLER",
+    "AddressNo": "1",
+    "ErrorCode": "91800800",
+    "ErrorDesc": "WTS CTU GRIPPER4 STALL(Static)",
+    "ALID": "1136",
+    "ALTX": "WTS CTU GRIPPER STALL"
+  },
+  {
+    "Controller": "CTU_CONTROLLER",
+    "AddressNo": "1",
+    "ErrorCode": "91809800",
+    "ErrorDesc": "WTS CTU GRIPPER4 STALL(Dynamic)",
+    "ALID": "1136",
+    "ALTX": "WTS CTU GRIPPER STALL"
+  },
+  {
+    "Controller": "CTU_CONTROLLER",
+    "AddressNo": "1",
+    "ErrorCode": "84803800",
+    "ErrorDesc": "WTS CTU GRIPPER4 TIMEOUT",
+    "ALID": "1138",
+    "ALTX": "WTS CTU GRIPPER TIMEOUT"
+  },
+  {
+    "Controller": "CTU_CONTROLLER",
+    "AddressNo": "2",
+    "ErrorCode": "91800000",
+    "ErrorDesc": "WTS PTZ T-AXIS STALL(Static)",
+    "ALID": "1140",
+    "ALTX": "WTS PTZ T-AXIS STALL"
+  },
+  {
+    "Controller": "CTU_CONTROLLER",
+    "AddressNo": "2",
+    "ErrorCode": "91809000",
+    "ErrorDesc": "WTS PTZ T-AXIS STALL(Dynamic)",
+    "ALID": "1140",
+    "ALTX": "WTS PTZ T-AXIS STALL"
+  },
+  {
+    "Controller": "CTU_CONTROLLER",
+    "AddressNo": "2",
+    "ErrorCode": "84803000",
+    "ErrorDesc": "WTS PTZ T-AXIS TIMEOUT",
+    "ALID": "1142",
+    "ALTX": "WTS PTZ T-AXIS TIMEOUT"
+  },
+  {
+    "Controller": "CTU_CONTROLLER",
+    "AddressNo": "2",
+    "ErrorCode": "91800100",
+    "ErrorDesc": "WTS PTZ STALL(Static)",
+    "ALID": "1146",
+    "ALTX": "WTS PTZ STALL"
+  },
+  {
+    "Controller": "CTU_CONTROLLER",
+    "AddressNo": "2",
+    "ErrorCode": "91809100",
+    "ErrorDesc": "WTS PTZ STALL(Dynamic)",
+    "ALID": "1146",
+    "ALTX": "WTS PTZ STALL"
+  },
+  {
+    "Controller": "CTU_CONTROLLER",
+    "AddressNo": "2",
+    "ErrorCode": "84803100",
+    "ErrorDesc": "WTS PTZ TIMEOUT",
+    "ALID": "1148",
+    "ALTX": "WTS PTZ TIMEOUT"
+  },
+  {
+    "Controller": "SANWA_ALIGNER",
+    "AddressNo": "",
+    "ErrorCode": "91800?00",
+    "ErrorDesc": "WTS NOTCH ALIGNER SUPPORT ARM? STALL",
+    "ALID": "1150",
+    "ALTX": "WTS NOTCH ALIGNER SUPPORT ARM? STALL"
+  },
+  {
+    "Controller": "SANWA_ALIGNER",
+    "AddressNo": "",
+    "ErrorCode": "84803000",
+    "ErrorDesc": "WTS NOTCH ALIGNER SUPPORT ARM? TIMEOUT",
+    "ALID": "1152",
+    "ALTX": "WTS NOTCH ALIGNER SUPPORT ARM? TIMEOUT"
+  },
+  {
+    "Controller": "CTU_CONTROLLER",
+    "AddressNo": "3",
+    "ErrorCode": "91800A00",
+    "ErrorDesc": "WTS NOTCH ALIGNER NOTCH FINDER STALL(Static)",
+    "ALID": "1156",
+    "ALTX": "WTS NOTCH ALIGNER NOTCH FINDER STALL"
+  },
+  {
+    "Controller": "CTU_CONTROLLER",
+    "AddressNo": "3",
+    "ErrorCode": "91809A00",
+    "ErrorDesc": "WTS NOTCH ALIGNER NOTCH FINDER STALL(Dynamic)",
+    "ALID": "1156",
+    "ALTX": "WTS NOTCH ALIGNER NOTCH FINDER STALL"
+  },
+  {
+    "Controller": "CTU_CONTROLLER",
+    "AddressNo": "3",
+    "ErrorCode": "84803A00",
+    "ErrorDesc": "WTS NOTCH ALIGNER NOTCH FINDER TIMEOUT",
+    "ALID": "1158",
+    "ALTX": "WTS NOTCH ALIGNER NOTCH FINDER TIMEOUT"
+  },
+  {
+    "Controller": "SYSTEM",
+    "AddressNo": "-1",
+    "ErrorCode": "1220",
+    "ErrorDesc": "ELPT1 FOUP manually placed in Auto",
+    "ALID": "1220",
+    "ALTX": "ELPT1 LOAD VIOLATION"
+  },
+  {
+    "Controller": "SYSTEM",
+    "AddressNo": "-1",
+    "ErrorCode": "1222",
+    "ErrorDesc": "ELPT1 FOUP manually removed in Auto",
+    "ALID": "1222",
+    "ALTX": "ELPT1 UNLOAD VIOLATION"
+  },
+  {
+    "Controller": "SYSTEM",
+    "AddressNo": "-1",
+    "ErrorCode": "1230",
+    "ErrorDesc": "ELPT2 FOUP manually placed in Auto",
+    "ALID": "1230",
+    "ALTX": "ELPT2 LOAD VIOLATION"
+  },
+  {
+    "Controller": "SYSTEM",
+    "AddressNo": "-1",
+    "ErrorCode": "1232",
+    "ErrorDesc": "ELPT2 FOUP manually removed in Auto",
+    "ALID": "1232",
+    "ALTX": "ELPT2 UNLOAD VIOLATION"
+  },
+  {
+    "Controller": "SYSTEM",
+    "AddressNo": "-1",
+    "ErrorCode": "1306",
+    "ErrorDesc": "STOCKER GRIPPER  STATE ERROR",
+    "ALID": "1306",
+    "ALTX": "STOCKER GRIPPER  STATE ERROR"
+  },
+  {
+    "Controller": "STK_CONTROLLER",
+    "AddressNo": "0",
+    "ErrorCode": "98A04000",
+    "ErrorDesc": "FOUP_ROBOT_PRESENCE_ERROR",
+    "ALID": "1308",
+    "ALTX": "STOCKER GRIPPER FOUP ERROR"
+  },
+  {
+    "Controller": "STK_CONTROLLER",
+    "AddressNo": "5",
+    "ErrorCode": "88901000",
+    "ErrorDesc": "SHELF_PRESENCE_ERROR",
+    "ALID": "1310",
+    "ALTX": "STOCKER SHELF SENSOR ERROR"
+  },
+  {
+    "Controller": "SYSTEM",
+    "AddressNo": "-1",
+    "ErrorCode": "1312",
+    "ErrorDesc": "STOCKER ALL SHELVES FULL ERROR",
+    "ALID": "1312",
+    "ALTX": "STOCKER ALL SHELVES FULL ERROR"
+  },
+  {
+    "Controller": "SYSTEM",
+    "AddressNo": "-1",
+    "ErrorCode": "1314",
+    "ErrorDesc": "STOCKER COMMAMD ERROR",
+    "ALID": "1314",
+    "ALTX": "STOCKER COMMAMD ERROR"
+  },
+  {
+    "Controller": "SYSTEM",
+    "AddressNo": "-1",
+    "ErrorCode": "1316",
+    "ErrorDesc": "STOCKER TCPIP ERROR",
+    "ALID": "1316",
+    "ALTX": "STOCKER TCPIP ERROR"
+  },
+  {
+    "Controller": "STK_CONTROLLER",
+    "AddressNo": "0",
+    "ErrorCode": "99999999",
+    "ErrorDesc": "STOCKER UNKNOWN ERROR",
+    "ALID": "1318",
+    "ALTX": "STOCKER UNKNOWN ERROR"
+  },
+  {
+    "Controller": "STK_CONTROLLER",
+    "AddressNo": "1",
+    "ErrorCode": "98802000",
+    "ErrorDesc": "ELPT Dock position error",
+    "ALID": "1320",
+    "ALTX": "STOCKER ELPT 1 X-AXIS STATE ERROR"
+  },
+  {
+    "Controller": "STK_CONTROLLER",
+    "AddressNo": "1",
+    "ErrorCode": "98805000",
+    "ErrorDesc": "ELPT Clamp position error",
+    "ALID": "1322",
+    "ALTX": "STOCKER ELPT 1 LOCK STATE ERROR"
+  },
+  {
+    "Controller": "STK_CONTROLLER",
+    "AddressNo": "1",
+    "ErrorCode": "98803000",
+    "ErrorDesc": "ELPT FOUP presence abnormal",
+    "ALID": "1324",
+    "ALTX": "STOCKER ELPT 1 FOUP STATE ERROR"
+  },
+  {
+    "Controller": "SYSTEM",
+    "AddressNo": "-1",
+    "ErrorCode": "1326",
+    "ErrorDesc": "STOCKER ELPT 1 SHUTTLE  BUSY ERROR",
+    "ALID": "1326",
+    "ALTX": "STOCKER ELPT 1 SHUTTLE  BUSY ERROR"
+  },
+  {
+    "Controller": "SYSTEM",
+    "AddressNo": "-1",
+    "ErrorCode": "1328",
+    "ErrorDesc": "STOCKER ELPT 1 LOCK BUSY ERROR",
+    "ALID": "1328",
+    "ALTX": "STOCKER ELPT 1 LOCK BUSY ERROR"
+  },
+  {
+    "Controller": "SYSTEM",
+    "AddressNo": "-1",
+    "ErrorCode": "1330",
+    "ErrorDesc": "STOCKER ELPT 1 E84 ERROR",
+    "ALID": "1330",
+    "ALTX": "STOCKER ELPT 1 E84 ERROR"
+  },
+  {
+    "Controller": "SYSTEM",
+    "AddressNo": "-1",
+    "ErrorCode": "1332",
+    "ErrorDesc": "STOCKER ELPT 1 COMM ERROR",
+    "ALID": "1332",
+    "ALTX": "STOCKER ELPT 1 COMM ERROR"
+  },
+  {
+    "Controller": "STK_CONTROLLER",
+    "AddressNo": "1",
+    "ErrorCode": "99999999",
+    "ErrorDesc": "STOCKER ELPT 1 UNKNOWN ERROR",
+    "ALID": "1334",
+    "ALTX": "STOCKER ELPT 1 UNKNOWN ERROR"
+  },
+  {
+    "Controller": "STK_CONTROLLER",
+    "AddressNo": "2",
+    "ErrorCode": "98802000",
+    "ErrorDesc": "ELPT Dock position error",
+    "ALID": "1340",
+    "ALTX": "STOCKER ELPT 2 X-AXIS STATE ERROR"
+  },
+  {
+    "Controller": "STK_CONTROLLER",
+    "AddressNo": "2",
+    "ErrorCode": "98805000",
+    "ErrorDesc": "ELPT Clamp position error",
+    "ALID": "1342",
+    "ALTX": "STOCKER ELPT 2 LOCK STATE ERROR"
+  },
+  {
+    "Controller": "STK_CONTROLLER",
+    "AddressNo": "2",
+    "ErrorCode": "98803000",
+    "ErrorDesc": "ELPT FOUP presence abnormal",
+    "ALID": "1344",
+    "ALTX": "STOCKER ELPT 2 FOUP STATE ERROR"
+  },
+  {
+    "Controller": "SYSTEM",
+    "AddressNo": "-1",
+    "ErrorCode": "1346",
+    "ErrorDesc": "STOCKER ELPT 2 SHTL BUSY ERROR",
+    "ALID": "1346",
+    "ALTX": "STOCKER ELPT 2 SHTL BUSY ERROR"
+  },
+  {
+    "Controller": "SYSTEM",
+    "AddressNo": "-1",
+    "ErrorCode": "1348",
+    "ErrorDesc": "STOCKER ELPT 2 LOCK_BUSY ERROR",
+    "ALID": "1348",
+    "ALTX": "STOCKER ELPT 2 LOCK_BUSY ERROR"
+  },
+  {
+    "Controller": "SYSTEM",
+    "AddressNo": "-1",
+    "ErrorCode": "1350",
+    "ErrorDesc": "STOCKER ELPT 2 E84 ERROR",
+    "ALID": "1350",
+    "ALTX": "STOCKER ELPT 2 E84 ERROR"
+  },
+  {
+    "Controller": "SYSTEM",
+    "AddressNo": "-1",
+    "ErrorCode": "1352",
+    "ErrorDesc": "STOCKER ELPT 2 COMM ERROR",
+    "ALID": "1352",
+    "ALTX": "STOCKER ELPT 2 COMM ERROR"
+  },
+  {
+    "Controller": "STK_CONTROLLER",
+    "AddressNo": "2",
+    "ErrorCode": "99999999",
+    "ErrorDesc": "STOCKER ELPT 2 UNKNOWN ERROR",
+    "ALID": "1354",
+    "ALTX": "STOCKER ELPT 2 UNKNOWN ERROR"
+  },
+  {
+    "Controller": "WHR_CONTROLLER",
+    "AddressNo": "0",
+    "ErrorCode": "88B02000",
+    "ErrorDesc": "X axis position error",
+    "ALID": "1360",
+    "ALTX": "WTS WHR X-AXIS STATE ERROR"
+  },
+  {
+    "Controller": "WHR_CONTROLLER",
+    "AddressNo": "0",
+    "ErrorCode": "88B00000",
+    "ErrorDesc": "ILPT Wafer status error",
+    "ALID": "1370",
+    "ALTX": "WTS WHR WAFER STATE ERROR"
+  },
+  {
+    "Controller": "WHR_CONTROLLER",
+    "AddressNo": "0",
+    "ErrorCode": "88B01000",
+    "ErrorDesc": "CTU Grab status error",
+    "ALID": "1370",
+    "ALTX": "WTS WHR WAFER STATE ERROR"
+  },
+  {
+    "Controller": "SYSTEM",
+    "AddressNo": "-1",
+    "ErrorCode": "1372",
+    "ErrorDesc": "WTS WHR CMD ERROR",
+    "ALID": "1372",
+    "ALTX": "WTS WHR CMD ERROR"
+  },
+  {
+    "Controller": "SYSTEM",
+    "AddressNo": "-1",
+    "ErrorCode": "1374",
+    "ErrorDesc": "WTS WHR TCPIP ERROR",
+    "ALID": "1374",
+    "ALTX": "WTS WHR TCPIP ERROR"
+  },
+  {
+    "Controller": "WHR_CONTROLLER",
+    "AddressNo": "0",
+    "ErrorCode": "99999999",
+    "ErrorDesc": "WTS WHR UNKNOWN ERROR",
+    "ALID": "1376",
+    "ALTX": "WTS WHR UNKNOWN ERROR"
+  },
+  {
+    "Controller": "STK_CONTROLLER",
+    "AddressNo": "3",
+    "ErrorCode": "98A0E000",
+    "ErrorDesc": "ILPT1 Detect WHR Arm Extend",
+    "ALID": "9999",
+    "ALTX": "WTS WHR INTERLOCK"
+  },
+  {
+    "Controller": "STK_CONTROLLER",
+    "AddressNo": "4",
+    "ErrorCode": "98A0E000",
+    "ErrorDesc": "ILPT2 Detect WHR Arm Extend",
+    "ALID": "9999",
+    "ALTX": "WTS WHR INTERLOCK"
+  },
+  {
+    "Controller": "CTU_CONTROLLER",
+    "AddressNo": "1",
+    "ErrorCode": "88C09000",
+    "ErrorDesc": "WHR extend arm to CTU interlock",
+    "ALID": "9999",
+    "ALTX": "WTS WHR INTERLOCK"
+  },
+  {
+    "Controller": "CTU_CONTROLLER",
+    "AddressNo": "1",
+    "ErrorCode": "88C04000",
+    "ErrorDesc": "CTU_POSITION_ERROR_FOR_ROTATE",
+    "ALID": "9999",
+    "ALTX": "WTS CTU POSITION ERROR"
+  },
+  {
+    "Controller": "CTU_CONTROLLER",
+    "AddressNo": "1",
+    "ErrorCode": "88C03000",
+    "ErrorDesc": "CTU_POSITION_ERROR_FOR_WHR",
+    "ALID": "9999",
+    "ALTX": "WTS CTU POSITION ERROR"
+  },
+  {
+    "Controller": "CTU_CONTROLLER",
+    "AddressNo": "1",
+    "ErrorCode": "88C05000",
+    "ErrorDesc": "CTU_POSITION_ERROR_FOR_PTZ",
+    "ALID": "9999",
+    "ALTX": "WTS CTU POSITION ERROR"
+  },
+  {
+    "Controller": "CTU_CONTROLLER",
+    "AddressNo": "1",
+    "ErrorCode": "88C06000",
+    "ErrorDesc": "PTZ_POSITION_ERROR_FOR_CTU",
+    "ALID": "9999",
+    "ALTX": "WTS PTZ POSITION ERROR"
+  },
+  {
+    "Controller": "CTU_CONTROLLER",
+    "AddressNo": "1",
+    "ErrorCode": "88C07000",
+    "ErrorDesc": "CTU_MOVE_TO_PTZ_POSITION_ERROR",
+    "ALID": "9999",
+    "ALTX": "WTS CTU POSITION ERROR"
+  },
+  {
+    "Controller": "CTU_CONTROLLER",
+    "AddressNo": "2",
+    "ErrorCode": "88D01000",
+    "ErrorDesc": "CTU_NOT_IN_HOME_POSITION",
+    "ALID": "9999",
+    "ALTX": "WTS CTU POSITION ERROR"
+  },
+  {
+    "Controller": "CTU_CONTROLLER",
+    "AddressNo": "1",
+    "ErrorCode": "88B01000",
+    "ErrorDesc": "CTU_GRAB_STATUS_ERROR",
+    "ALID": "1382",
+    "ALTX": "WTS CTU GRIP STATE ERROR"
+  },
+  {
+    "Controller": "CTU_CONTROLLER",
+    "AddressNo": "1",
+    "ErrorCode": "88C01000",
+    "ErrorDesc": "CTU_GRAB_SENSOR_ERROR",
+    "ALID": "1382",
+    "ALTX": "WTS CTU GRIP STATE ERROR"
+  },
+  {
+    "Controller": "CTU_CONTROLLER",
+    "AddressNo": "1",
+    "ErrorCode": "88C02000",
+    "ErrorDesc": "CTU_RELEASE_SENSOR_ERROR",
+    "ALID": "1382",
+    "ALTX": "WTS CTU GRIP STATE ERROR"
+  },
+  {
+    "Controller": "CTU_CONTROLLER",
+    "AddressNo": "1",
+    "ErrorCode": "88C08000",
+    "ErrorDesc": "CTU_WAFER_PROTRUSION_PROTECT",
+    "ALID": "1386",
+    "ALTX": "WTS CTU WAFER STATE ERROR"
+  },
+  {
+    "Controller": "CTU_CONTROLLER",
+    "AddressNo": "1",
+    "ErrorCode": "88C0E000",
+    "ErrorDesc": "CTU_WAFER_PROTECT_NOT_EMPTY",
+    "ALID": "1386",
+    "ALTX": "WTS CTU WAFER STATE ERROR"
+  },
+  {
+    "Controller": "CTU_CONTROLLER",
+    "AddressNo": "1",
+    "ErrorCode": "88C00000",
+    "ErrorDesc": "CTU_MARCO_PARAMETER_ERROR",
+    "ALID": "1388",
+    "ALTX": "WTS CTU CMD_ERROR"
+  },
+  {
+    "Controller": "SYSTEM",
+    "AddressNo": "-1",
+    "ErrorCode": "1388",
+    "ErrorDesc": "WTS CTU CMD_ERROR",
+    "ALID": "1388",
+    "ALTX": "WTS CTU CMD_ERROR"
+  },
+  {
+    "Controller": "SYSTEM",
+    "AddressNo": "-1",
+    "ErrorCode": "1390",
+    "ErrorDesc": "WTS CTU TCPIP_ERROR",
+    "ALID": "1390",
+    "ALTX": "WTS CTU TCPIP_ERROR"
+  },
+  {
+    "Controller": "CTU_CONTROLLER",
+    "AddressNo": "1",
+    "ErrorCode": "99999999",
+    "ErrorDesc": "WTS CTU UNKNOWN_ERROR",
+    "ALID": "1392",
+    "ALTX": "WTS CTU UNKNOWN_ERROR"
+  },
+  {
+    "Controller": "CTU_CONTROLLER",
+    "AddressNo": "2",
+    "ErrorCode": "88D0C000",
+    "ErrorDesc": "CTU_ALLOW_PTZ_ACCESS_INTERLOCK",
+    "ALID": "9999",
+    "ALTX": "WTS CTU INTERLOCK"
+  }
+]

@@ -23,7 +23,7 @@ namespace sandalphon
           
         }
 
-        public void On_Alarm_Happen(AlarmInfo Alarm)
+        public void On_Alarm_Happen(TransferControl.Management.AlarmManagement.AlarmInfo Alarm)
         {
       
             Startup.GlobalHub.InvokeOnAllAsync("On_Alarm_Happen", new { Alarm });
@@ -134,8 +134,7 @@ namespace sandalphon
         public void On_TaskJob_Aborted(TaskFlowManagement.CurrentProcessTask Task, string NodeName, string ReportType, string Message)
         {
             
-            AlarmMessage Status = AlarmMapping.Get("SYSTEM", Message);
-            Startup.GlobalHub.InvokeOnAllAsync("On_TaskJob_Aborted", new { Task, NodeName, Status });
+            Startup.GlobalHub.InvokeOnAllAsync("On_TaskJob_Aborted", new { Task });
         }
 
         public void On_TaskJob_Ack(TaskFlowManagement.CurrentProcessTask Task)
@@ -150,6 +149,9 @@ namespace sandalphon
             Startup.GlobalHub.InvokeOnAllAsync("On_TaskJob_Finished", new { Task });
         }
 
-       
+        public Node GetNode(string Name)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

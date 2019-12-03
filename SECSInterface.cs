@@ -26,7 +26,7 @@ namespace sandalphon
             _Report = Report;
         }
 
-        public void On_Alarm_Happen(AlarmInfo Alarm)
+        public void On_Alarm_Happen(TransferControl.Management.AlarmManagement.AlarmInfo Alarm)
         {
             string Event = "On_Alarm_Happend";
             Comm.Send(_handler, JsonConvert.SerializeObject(new { Event, Alarm }, new JsonSerializerSettings() { StringEscapeHandling = StringEscapeHandling.EscapeNonAscii }) + Convert.ToChar(3));
@@ -116,7 +116,7 @@ namespace sandalphon
             if (Comm != null)
             {
                 Comm.Send(_handler, JsonConvert.SerializeObject(new { Event, Task, NodeName, ReportType, Message }) + Convert.ToChar(3));
-                AlarmMessage AlarmMessage = AlarmMapping.Get("SYSTEM", Message);
+              
             }
             _Report.On_TaskJob_Aborted(Task, NodeName, ReportType, Message);
         }
@@ -178,7 +178,7 @@ namespace sandalphon
                 //var q = from p in restoredObject.Properties()
                 //        where p.Name == "Name"
                 //        select p;
-
+                string Event = "";
                 switch (restoredObject.Property("Event").Value.ToString())
                 {
                     case "NewTask":
@@ -193,6 +193,12 @@ namespace sandalphon
                         logger.Info(Type+":"+Message);
                         _Report.On_Message_Log(Type, Message);
                         break;
+                    case "NodeReq":
+                        Event = "NodeReq";
+                        string Name = restoredObject.Property("Name").Value.ToString();
+                        Node Node = NodeManagement.Get(Name);
+                        Comm.Send(_handler, JsonConvert.SerializeObject(new { Event, Node }) + Convert.ToChar(3));
+                        break;
                 }
             }
             catch (Exception e)
@@ -206,6 +212,11 @@ namespace sandalphon
         public void NewTask(string Id, TaskFlowManagement.Command TaskName, Dictionary<string, string> param = null)
         {
           
+        }
+
+        public Node GetNode(string Name)
+        {
+            throw new NotImplementedException();
         }
     }
 }

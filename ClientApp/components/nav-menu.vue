@@ -29,8 +29,8 @@
               </router-link>
             </li>
             <li class="nav-item" @click="collapsed=true">
-              <router-link to="/fetch-data" exact-active-class="active">
-                <icon icon="list" class="mr-2 menu-icon" /><span>{{$t('nav.data')}}</span>
+              <router-link to="/alarm-history" exact-active-class="active">
+                <icon icon="list" class="mr-2 menu-icon" /><span>{{$t('nav.alarmhistory')}}</span>
               </router-link>
             </li>
             <li class="nav-item sidebar_button">

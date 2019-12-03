@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import ManualControl from 'components/manual-control'
-import FetchData from 'components/fetch-data'
+import AlarmHistory from 'components/alarm-history'
 import HomePage from 'components/home-page'
 import About from 'components/about'
 import Login from 'components/login'
@@ -20,7 +20,7 @@ let routes = [
       requiresAuth: true
     }
   },
-  { name: 'fetch-data', path: '/fetch-data', component: FetchData }
+  { name: 'alarm-history', path: '/alarm-history', component: AlarmHistory }
 ]
 
 let router = new VueRouter({
