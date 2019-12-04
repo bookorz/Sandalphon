@@ -34,8 +34,8 @@
               </router-link>
             </li>
             <li class="nav-item sidebar_button">
-              <button type="button" class="btn btn-info" v-show="!form.isLogin" @click="login">Login</button>
-              <button type="button" class="btn btn-info" v-show="form.isLogin" @click="logout">Logout</button>
+              <button type="button" class="btn btn-info" v-show="!isLogin" @click="login">Login</button>
+              <button type="button" class="btn btn-info" v-show="isLogin" @click="logout">Logout</button>
               <b-form-group style="color:white" :label="$t('nav.language')">
                 <b-form-select v-model="form.language" :options="lang_options" @change="switchLang(form.language)"></b-form-select>
               </b-form-group>
@@ -63,7 +63,8 @@
     },
     computed: {
       ...mapState({
-        form: state => state.form
+        form: state => state.form,
+        isLogin: state => state.isLogin
       }),
       ...mapGetters(['form_get'])
     },

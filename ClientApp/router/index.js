@@ -34,7 +34,7 @@ router.beforeEach((to, from, next) => {
   if (to.matched.some(record => record.meta.requiresAuth)) {
     // 判斷當前是否有登入的許可權
 
-    if (!router.app.$options.store.getters.form_get.isLogin) {
+    if (!router.app.$options.store.getters.isLogin_get) {
       next({
         path: '/login',
         query: { redirect: to.fullPath }

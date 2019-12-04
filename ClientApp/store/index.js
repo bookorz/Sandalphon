@@ -6,10 +6,11 @@ Vue.use(Vuex)
 // TYPES
 const MAIN_SET_COUNTER = 'MAIN_SET_COUNTER'
 const MAIN_SET_FORM = 'MAIN_SET_FORM'
-
+const MAIN_SET_ISLOGIN = 'MAIN_SET_ISLOGIN'
 // STATE
 const state = {
   counter: 1,
+  isLogin: false,
   form: JSON.parse(window.localStorage.form ||
     JSON.stringify({
       ELPT: null,
@@ -23,7 +24,6 @@ const state = {
       Direction: '0',
       align_angle: '',
       language: 'eng',
-      isLogin: false,
       foup_robot_speed: '',
       whr_speed: '',
       ctu_speed: '',
@@ -32,7 +32,8 @@ const state = {
     }))
 }
 const getters = {
-  form_get: state => state.form
+  form_get: state => state.form,
+  isLogin_get: state => state.isLogin
 }
 // MUTATIONS
 const mutations = {
@@ -41,6 +42,10 @@ const mutations = {
   },
   [MAIN_SET_FORM] (form, obj) {
     state.form = obj.form
+    // window.localStorage.setItem('form', JSON.stringify(obj.form))
+  },
+  [MAIN_SET_ISLOGIN] (form, obj) {
+    state.isLogin = obj
     // window.localStorage.setItem('form', JSON.stringify(obj.form))
   }
 }
@@ -61,6 +66,9 @@ const actions = ({
   },
   setForm ({ commit }, obj) {
     commit(MAIN_SET_FORM, obj)
+  },
+  setIsLogin ({ commit }, obj) {
+    commit(MAIN_SET_ISLOGIN, obj)
   }
 })
 

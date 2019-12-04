@@ -39,14 +39,16 @@
     },
     computed: {
       ...mapState({
-        form: state => state.form
+        form: state => state.form,
+        isLogin: state => state.isLogin
       })
     },
     methods: {
       ...mapActions(['setForm']),
+      ...mapActions(['setIsLogin']),
       login() {
         if (this.user == 'sanwa' && this.pwd == '123') {
-          this.form.isLogin = true
+          this.setIsLogin({ isLogin: true })
           if (this.$route.query.redirect) {
             let redirect = this.$route.query.redirect
             this.$router.push(redirect)

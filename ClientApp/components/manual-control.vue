@@ -327,13 +327,34 @@
       <b-spinner variant="info" label="Loading..."></b-spinner>
     </BlockUI>
 
-    <b-modal id="alarm_modal" hide-footer>
+    <b-modal id="alarm_modal" size="lg"
+             header-bg-variant="danger"
+             header-text-variant="light"
+             centered hide-footer>
       <template v-slot:modal-title>
         Alarm Happend
       </template>
-      <div class="d-block text-center">
-        {{alarm_message}}
-      </div>
+      <b-container fluid>
+        <b-row class="mb-1">
+          <b-col cols="3">Node:</b-col>
+          <b-col>
+            {{alarm_message.nodeName}}
+          </b-col>
+        </b-row>
+        
+        <b-row class="mb-1">
+          <b-col cols="3">Error Code:</b-col>
+          <b-col>
+            {{alarm_message.errorCode}}
+          </b-col>
+        </b-row>
+        <b-row class="mb-1">
+          <b-col cols="3">Error Desc:</b-col>
+          <b-col>
+            {{alarm_message.errorDesc}}
+          </b-col>
+        </b-row>
+      </b-container>
       <b-button class="mt-3" block @click="$bvModal.hide('alarm_modal')">Close Me</b-button>
     </b-modal>
   </div>
@@ -362,7 +383,7 @@
           { text: 'Face To Back', value: '2' },
           { text: 'Back To Face', value: '3' }
         ],
-        alarm_message: null
+        alarm_message: { nodeName: '',errorCode: '',errorDesc: ''}
       }
     },
 
