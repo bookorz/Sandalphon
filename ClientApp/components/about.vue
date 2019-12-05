@@ -6,14 +6,14 @@
         <b-tab title="SECS/GEM" :title-link-class="linkClass(0)">
           <div class="secslog">
             <div class="msg" v-for="log in secslog">
-              <span style="white-space: pre;font-size:small">{{log.message}}</span>
+              <span style="white-space: pre">{{log.message}}</span>
             </div>
           </div>
         </b-tab>
         <b-tab title="Command" :title-link-class="linkClass(1)">
           <div class="cmdlog">
             <div class="msg" v-for="log in cmdlog">
-              <span style="white-space: pre;font-size:small">{{log.message}}</span>
+              <span style="white-space: pre">{{log.message}}</span>
             </div>
           </div>
         </b-tab>
