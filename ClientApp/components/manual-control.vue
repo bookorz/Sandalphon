@@ -24,9 +24,42 @@
             <button type="button" class="btn btn-info" @click="RunTask('ELPT_MOVE_OUT')">Move Out</button>
           </b-form-group>
           <b-form-group :disabled="form.ELPT==null">
-            <button type="button" class="btn btn-warning" @click="RunTask('ELPT_INIT')">Init</button>
-            <button type="button" class="btn btn-warning" @click="RunTask('ELPT_RESET')">Reset</button>
+            <b-row>
+              <b-col sm="4">
+                <b-form-input v-model="form.elpt_speed"
+                              :state="ELPTSpeedState"
+                              aria-describedby="input-live-help input-live-feedback"
+                              placeholder="Speed %"
+                              trim></b-form-input>
+
+                <!-- This will only be shown if the preceding input has an invalid state -->
+                <!--<b-form-invalid-feedback id="input-live-feedback">
+                  Enter 1~100
+                </b-form-invalid-feedback>-->
+              </b-col>
+              <b-col sm="3">
+                <button type="button" class="btn btn-warning" :disabled="!ELPTSpeedState" @click="RunTask('ELPT_SET_SPEED')">Speed</button>
+              </b-col>
+              <b-col sm="5">
+                <button type="button" class="btn btn-warning" @click="RunTask('ELPT_INIT')">Init</button>
+                <button type="button" class="btn btn-warning" @click="RunTask('ELPT_RESET')">Reset</button>
+              </b-col>
+            </b-row>
           </b-form-group>
+          <b-form-group label="Light Curtain">
+            <b-row>
+              <b-col sm="3">
+                <button type="button" class="btn btn-warning" @click="RunTask('LIGHT_CURTAIN_RESET')">Reset</button>
+              </b-col>
+              <b-col sm="3">
+                <b-form-checkbox v-model="form.light_curtain" @change="RunTask('LIGHT_CURTAIN_ENABLED')" switch>
+                  Enabled
+                </b-form-checkbox>
+              </b-col>
+
+            </b-row>
+          </b-form-group>
+
         </b-card>
 
         <b-card title="ILPT Command" bg-variant="dark" text-variant="white" sub-title="">
@@ -86,9 +119,8 @@
           </b-form-group>
           <b-form-group>
             <b-row>
-              <b-col sm="5">
-                <b-form-input id="input-live"
-                              v-model="form.foup_robot_speed"
+              <b-col sm="4">
+                <b-form-input v-model="form.foup_robot_speed"
                               :state="FoupRobotSpeedState"
                               aria-describedby="input-live-help input-live-feedback"
                               placeholder="Speed %"
@@ -99,14 +131,14 @@
                   Enter 1~100
                 </b-form-invalid-feedback>-->
               </b-col>
-              <b-col sm="7">
-                <button type="button" class="btn btn-warning" :disabled="!FoupRobotSpeedState" @click="RunTask('FOUPROBOT_SET_SPEED')">Set</button>
+              <b-col sm="3">
+                <button type="button" class="btn btn-warning" :disabled="!FoupRobotSpeedState" @click="RunTask('FOUPROBOT_SET_SPEED')">Speed</button>
+              </b-col>
+              <b-col sm="5">
+                <button type="button" class="btn btn-warning" @click="RunTask('FOUPROBOT_INIT')">Init</button>
+                <button type="button" class="btn btn-warning" @click="RunTask('FOUPROBOT_RESET')">Reset</button>
               </b-col>
             </b-row>
-          </b-form-group>
-          <b-form-group>
-            <button type="button" class="btn btn-warning" @click="RunTask('FOUPROBOT_INIT')">Init</button>
-            <button type="button" class="btn btn-warning" @click="RunTask('FOUPROBOT_RESET')">Reset</button>
           </b-form-group>
         </b-card>
         <!--<b-card header="DEBUG Area" sub-title="">
@@ -124,8 +156,7 @@
                   <button type="button" class="btn btn-warning" @click="RunTask('WHR_RESET')">Reset</button>
                 </b-col>
                 <b-col sm="4">
-                  <b-form-input id="input-live"
-                                v-model="form.whr_speed"
+                  <b-form-input v-model="form.whr_speed"
                                 :state="WHRSpeedState"
                                 aria-describedby="input-live-help input-live-feedback"
                                 placeholder="Speed %"
@@ -200,8 +231,7 @@
             <b-form-group>
               <b-row>
                 <b-col sm="8">
-                  <b-form-input id="input-live"
-                                v-model="form.ctu_speed"
+                  <b-form-input v-model="form.ctu_speed"
                                 :state="CTUSpeedState"
                                 aria-describedby="input-live-help input-live-feedback"
                                 placeholder="Speed %"
@@ -221,13 +251,12 @@
           <b-card title="PTZ Command" bg-variant="dark" text-variant="white" sub-title="">
             <b-form-group>
               <button type="button" class="btn btn-warning" @click="RunTask('PTZ_HOME')">Home</button>
-              <button type="button" class="btn btn-warning">Reset</button>
+              <button type="button" class="btn btn-warning" @click="RunTask('CTU_RESET')">Reset</button>
             </b-form-group>
             <b-form-group>
               <b-row>
                 <b-col sm="8">
-                  <b-form-input id="input-live"
-                                v-model="form.ptz_speed"
+                  <b-form-input v-model="form.ptz_speed"
                                 :state="PTZSpeedState"
                                 aria-describedby="input-live-help input-live-feedback"
                                 placeholder="Speed %"
@@ -248,8 +277,7 @@
             <b-form-group>
               <b-row>
                 <b-col sm="8">
-                  <b-form-input id="input-live"
-                                v-model="form.align_angle"
+                  <b-form-input v-model="form.align_angle"
                                 :state="AngleState"
                                 aria-describedby="input-live-help input-live-feedback"
                                 placeholder="Align angle"
@@ -268,8 +296,7 @@
             <b-form-group>
               <b-row>
                 <b-col sm="8">
-                  <b-form-input id="input-live"
-                                v-model="form.aligner_speed"
+                  <b-form-input v-model="form.aligner_speed"
                                 :state="AlignerSpeedState"
                                 aria-describedby="input-live-help input-live-feedback"
                                 placeholder="Speed %"
@@ -336,20 +363,20 @@
       </template>
       <b-container fluid>
         <b-row class="mb-1">
-          <b-col cols="3">Node:</b-col>
+          <b-col cols="2">Node:</b-col>
           <b-col>
             {{alarm_message.nodeName}}
           </b-col>
         </b-row>
-        
+
         <b-row class="mb-1">
-          <b-col cols="3">Error Code:</b-col>
+          <b-col cols="2">Error Code:</b-col>
           <b-col>
             {{alarm_message.errorCode}}
           </b-col>
         </b-row>
         <b-row class="mb-1">
-          <b-col cols="3">Error Desc:</b-col>
+          <b-col cols="2">Error Desc:</b-col>
           <b-col>
             {{alarm_message.errorDesc}}
           </b-col>
@@ -362,6 +389,7 @@
 
 <script>
   import { mapActions, mapState } from 'vuex'
+  import qs from 'qs'
   export default {
     data() {
       return {
@@ -383,7 +411,7 @@
           { text: 'Face To Back', value: '2' },
           { text: 'Back To Face', value: '3' }
         ],
-        alarm_message: { nodeName: '',errorCode: '',errorDesc: ''}
+        alarm_message: { nodeName: '', errorCode: '', errorDesc: '' }
       }
     },
 
@@ -406,6 +434,9 @@
       PTZSpeedState() {
         return /^(100)$|^(\d{1,2})$/.test(this.form.ptz_speed)
       },
+      ELPTSpeedState() {
+        return /^(100)$|^(\d{1,2})$/.test(this.form.elpt_speed)
+      },
       AlignerSpeedState() {
         return /^(100)$|^(\d{1,2})$/.test(this.form.aligner_speed)
       }
@@ -426,6 +457,10 @@
         var val2 = ''
 
         switch (TaskName) {
+
+          case 'LIGHT_CURTAIN_ENABLED':
+            value = !this.form.light_curtain ? '1' :'0'
+            break;
           case 'FOUPROBOT_SET_SPEED':
             value = this.form.foup_robot_speed
             break;
@@ -434,6 +469,10 @@
             break;
           case 'PTZ_SET_SPEED':
             value = this.form.ptz_speed
+            break;
+          case 'ELPT_SET_SPEED':
+            target = this.form.ELPT
+            value = this.form.elpt_speed
             break;
           case 'WHR_SET_SPEED':
             value = this.form.whr_speed
@@ -515,8 +554,8 @@
             value = this.form.align_angle
             break;
         }
-        this.$http.post('/api/Transfer/TaskRun', { name: TaskName, target: target, mode: mode, station: station, direction: direction, value: value, position: position, val2: val2 })
-
+        let payload = { 'name': TaskName, 'target': target, 'mode': mode, 'station': station, 'direction': direction, 'value': value, 'position': position, 'val2': val2 }
+        this.$http.post('/api/Transfer/TaskRun', qs.stringify(payload))
       },
       On_TaskJob_Ack(data) {
         this.msg = 'Excuting...'
@@ -529,7 +568,7 @@
         this.spinnerStatus = false
       },
       On_Alarm_Happen(data) {
-        this.alarm_message = data[0]
+        this.alarm_message = data[0].alarm
         this.$bvModal.show('alarm_modal')
       }
     },

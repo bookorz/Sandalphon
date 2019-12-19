@@ -21,7 +21,7 @@
           <tr :class="index % 2 == 0 ? 'bg-white' : 'bg-light'" v-for="(alarm, index) in alarmList" :key="index" @click="showDetail(alarm)">
             <td>{{ alarm.nodeName }}</td>
             <td>{{ content(alarm.errorCode) }}</td>
-            <td>{{ alarm.errorDesc }}</td>
+            <td>{{ content(alarm.errorDesc) }}</td>
             <td>{{ alarm.timeStamp | moment("YYYY/MM/DD HH:mm:ss") }}</td>
           </tr>
         </tbody>
@@ -97,7 +97,7 @@
         total: 0,
         pageSize: 15,
         currentPage: 1,
-        maxLen: 15,
+        maxLen: 40,
         alarm_detail: ''
       }
     },

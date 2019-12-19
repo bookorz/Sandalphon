@@ -5,6 +5,7 @@ import AlarmHistory from 'components/alarm-history'
 import HomePage from 'components/home-page'
 import About from 'components/about'
 import Login from 'components/login'
+import ioList from 'components/io-list'
 
 Vue.use(VueRouter)
 
@@ -20,6 +21,7 @@ let routes = [
       requiresAuth: true
     }
   },
+  { name: 'io-list', path: '/io-list', component: ioList },
   { name: 'alarm-history', path: '/alarm-history', component: AlarmHistory }
 ]
 

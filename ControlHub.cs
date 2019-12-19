@@ -2,9 +2,9 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using TransferControl.CommandConvert;
-using TransferControl.Engine;
-using TransferControl.Management;
+using ControlService.CommandConvert;
+using ControlService.Engine;
+using ControlService.Management;
 
 namespace sandalphon
 {
@@ -23,7 +23,7 @@ namespace sandalphon
           
         }
 
-        public void On_Alarm_Happen(TransferControl.Management.AlarmManagement.AlarmInfo Alarm)
+        public void On_Alarm_Happen(ControlService.Management.AlarmManagement.AlarmInfo Alarm)
         {
       
             Startup.GlobalHub.InvokeOnAllAsync("On_Alarm_Happen", new { Alarm });

@@ -26,6 +26,26 @@ Vue.prototype.$http = axios
 sync(store, router)
 Vue.use(signalrHub)
 
+Vue.config.debug = true
+Vue.config.devtools = true
+// http request 欄截
+// axios.interceptors.request.use(
+//  config => {
+//    if (config.method === 'post') {
+//      config.data = JSON.stringify(config.data)
+//    }
+//    config.headers = { // 如果沒有cors的問題則可以都不加
+//      'Access-Control-Allow-Origin': process.env.API_ROOT,
+//      'Access-Control-Allow-Methods': 'GET, PUT, POST, DELETE, OPTIONS',
+//      'Access-Control-Max-Age': '86400'
+//    }
+//    return config
+//  },
+//  error => {
+//    return Promise.reject(error)
+//  }
+// )
+
 // 取得預設語系
 const i18n = new VueI18n({
   locale: 'eng',

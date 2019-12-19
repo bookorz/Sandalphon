@@ -28,7 +28,9 @@ const state = {
       whr_speed: '',
       ctu_speed: '',
       ptz_speed: '',
-      aligner_speed: ''
+      elpt_speed: '',
+      aligner_speed: '',
+      light_curtain: false
     }))
 }
 const getters = {

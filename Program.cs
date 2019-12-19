@@ -5,6 +5,7 @@ using log4net.Config;
 using System.Reflection;
 using System.IO;
 using System.Xml;
+using Microsoft.Extensions.Hosting;
 
 namespace sandalphon
 {
@@ -13,7 +14,7 @@ namespace sandalphon
         public static void Main(string[] args)
         {
             LoadLog4netConfig();
-            CreateWebHostBuilder(args).Build().Run();
+            CreateHostBuilder(args).Build().Run();
         }
 
         private static void LoadLog4netConfig()
@@ -25,8 +26,15 @@ namespace sandalphon
             XmlConfigurator.Configure(repository, new FileInfo("log4net.config"));
         }
 
-        public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
-           WebHost.CreateDefaultBuilder(args)
-               .UseStartup<Startup>();
+        public static IHostBuilder CreateHostBuilder(string[] args) =>
+     Host.CreateDefaultBuilder(args)
+         .ConfigureWebHostDefaults(webBuilder =>
+         {
+             webBuilder.ConfigureKestrel(serverOptions =>
+             {
+                 // Set properties and call methods on options
+             })
+             .UseStartup<Startup>();
+         });
     }
 }

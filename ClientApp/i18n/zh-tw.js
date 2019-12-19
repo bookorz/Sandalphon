@@ -3,6 +3,7 @@ export default {
     dashboard: '監控頁面',
     showlog: '運作紀錄',
     manualcontrol: '手動控制',
+    iolist: 'I/O訊號',
     alarmhistory: '異常履歷',
     language: '語言'
   },
@@ -14,6 +15,14 @@ export default {
     loginBotton: '登入',
     messageBoxContent: '使用者名稱或密碼錯誤',
     messageBoxTitle: '錯誤'
+  },
+  io: {
+    header: 'I/O訊號',
+    ioNo: 'I/O 編號',
+    ioName: '名稱',
+    ioDesc: '描述',
+    ioType: '類型',
+    ioValue: '現值'
   },
   almhis: {
     header: '異常履歷',

@@ -7,10 +7,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Net.Sockets;
 using System.Threading.Tasks;
-using TransferControl.CommandConvert;
-using TransferControl.Config;
-using TransferControl.Engine;
-using TransferControl.Management;
+using ControlService.CommandConvert;
+using ControlService.Config;
+using ControlService.Engine;
+using ControlService.Management;
 
 namespace sandalphon
 {
@@ -26,7 +26,7 @@ namespace sandalphon
             _Report = Report;
         }
 
-        public void On_Alarm_Happen(TransferControl.Management.AlarmManagement.AlarmInfo Alarm)
+        public void On_Alarm_Happen(ControlService.Management.AlarmManagement.AlarmInfo Alarm)
         {
             string Event = "On_Alarm_Happend";
             Comm.Send(_handler, JsonConvert.SerializeObject(new { Event, Alarm }, new JsonSerializerSettings() { StringEscapeHandling = StringEscapeHandling.EscapeNonAscii }) + Convert.ToChar(3));

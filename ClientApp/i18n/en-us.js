@@ -3,6 +3,7 @@ export default {
     dashboard: 'Dashboard',
     showlog: 'Show Log',
     manualcontrol: 'Manual Control',
+    iolist: 'I/O',
     alarmhistory: 'Alarm History',
     language: 'Language'
   },
@@ -14,6 +15,14 @@ export default {
     loginBotton: 'Login',
     messageBoxContent: 'User name or password is incorrect',
     messageBoxTitle: 'Error'
+  },
+  io: {
+    header: 'I/O',
+    ioNo: 'I/O Number',
+    ioName: 'Name',
+    ioDesc: 'Description',
+    ioType: 'Type',
+    ioValue: 'Current Value'
   },
   almhis: {
     header: 'Alarm History',

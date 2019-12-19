@@ -1,9 +1,12 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using TransferControl.Management;
+using ControlService.Config;
+using ControlService.Engine;
+using ControlService.Management;
 
 namespace sandalphon.Controllers
 {
@@ -12,27 +15,28 @@ namespace sandalphon.Controllers
     {
         public class TaskRequest
         {
-            public string Name { get; set; }
-            public string Target { get; set; }
-            public string Value { get; set; }
-            public string Val2 { get; set; }
-            public string Position { get; set; }
-            public string Mode { get; set; }
-            public string Station { get; set; }
-            public string Direction { get; set; }
+            public string name { get; set; }
+            public string target { get; set; }
+            public string value { get; set; }
+            public string val2 { get; set; }
+            public string position { get; set; }
+            public string mode { get; set; }
+            public string station { get; set; }
+            public string direction { get; set; }
         }
         [HttpPost("[action]")]
-        public IActionResult TaskRun([FromBody]TaskRequest req)
+
+        public IActionResult TaskRun([FromForm]TaskRequest req)
         {
             Dictionary<string, string> param = new Dictionary<string, string>();
-            param.Add("@Target", req.Target);
-            param.Add("@Value", req.Value);
-            param.Add("@Val2", req.Val2);
-            param.Add("@Position", req.Position);
-            param.Add("@Mode", req.Mode);
-            param.Add("@Station", req.Station);
-            param.Add("@Direction", req.Direction);
-            TaskFlowManagement.Excute(Guid.NewGuid().ToString(), (TaskFlowManagement.Command)Enum.Parse(typeof(TaskFlowManagement.Command), req.Name), param);
+            param.Add("@Target", req.target);
+            param.Add("@Value", req.value);
+            param.Add("@Val2", req.val2);
+            param.Add("@Position", req.position);
+            param.Add("@Mode", req.mode);
+            param.Add("@Station", req.station);
+            param.Add("@Direction", req.direction);
+            TaskFlowManagement.Excute(Guid.NewGuid().ToString(), (TaskFlowManagement.Command)Enum.Parse(typeof(TaskFlowManagement.Command), req.name), param);
 
             var result = new
             {
@@ -48,7 +52,7 @@ namespace sandalphon.Controllers
             public string Name { get; set; }
         }
         [HttpPost("[action]")]
-        public IActionResult NodeInfo([FromBody]InfoRequest req)
+        public IActionResult NodeInfo([FromForm]InfoRequest req)
         {
 
             var result = new
@@ -114,6 +118,22 @@ namespace sandalphon.Controllers
             {
                 Total = allAlarm.Count,
                 alarmList = allAlarm.Skip(from).Take(quantity).ToArray()
+            };
+
+            return Ok(result);
+        }
+       
+        [HttpGet("[action]")]
+        public IActionResult IO_List()
+        {
+
+            //var nodeList = ioList.Select(o => o.node).Distinct();
+            SpinWait.SpinUntil(() => TaskFlowManagement.Excute(Guid.NewGuid().ToString(), TaskFlowManagement.Command.GET_IO).Finished, 5000);
+
+            List<RELIO> tmp = NodeManagement.Get("CTU").DIO.Values.ToList();
+            var result = new
+            {
+                ioList = tmp
             };
 
             return Ok(result);

@@ -29,6 +29,11 @@
               </router-link>
             </li>
             <li class="nav-item" @click="collapsed=true">
+              <router-link to="/io-list" exact-active-class="active">
+                <icon icon="user-cog" class="mr-2 menu-icon" /><span>{{$t('nav.iolist')}}</span>
+              </router-link>
+            </li>
+            <li class="nav-item" @click="collapsed=true">
               <router-link to="/alarm-history" exact-active-class="active">
                 <icon icon="list" class="mr-2 menu-icon" /><span>{{$t('nav.alarmhistory')}}</span>
               </router-link>
