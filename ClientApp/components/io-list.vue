@@ -51,12 +51,12 @@
         </thead>
 
         <tbody class="content">
-          <tr :class="index % 2 == 0 ? 'bg-white' : 'bg-light'" v-for="(io, index) in filtList" :key="index">
+          <tr :class="index % 2 == 0 ? 'bg-white' : 'bg-light'" v-for="(io, index) in filtList" :key="index" @dblclick="SetIO(io)">
             <td>{{ io.ioNo }}</td>
             <td>{{ io.ioName }}</td>
             <td>{{ io.ioDesc }}</td>
             <td>{{ io.ioType }}</td>
-            <td>{{ io.ioType }}</td>
+            <td>{{ io.ioValue }}</td>
           </tr>
         </tbody>
 
@@ -66,13 +66,15 @@
 </template>
 
 <script>
+  import qs from 'qs'
   export default {
     data() {
       return {
         ioList: null,
         filter: '',
         filtList: null,
-        autoRefresh: false
+        autoRefresh: false,
+
       }
     },
     watch: {
@@ -87,6 +89,12 @@
       }
     },
     methods: {
+      SetIO(io) {
+        if (io.ioType == 'OUT') {
+          let payload = { 'name': 'SET_IO', 'target': '', 'mode': '', 'station': '', 'direction': '', 'value': io.ioValue=='1'?'0':'1', 'position': '', 'val2': '', 'slot': io.ioName }
+          this.$http.post('/api/Transfer/TaskRun', qs.stringify(payload))
+        }
+      },
       refreshData() {
         if (this.autoRefresh) {
           this.loadPage()
@@ -99,7 +107,11 @@
 
           let response = await this.$http.get(`/api/Transfer/IO_List`)
           this.ioList = response.data.ioList
-          this.filtList = response.data.ioList
+          if (this.filter != '') {
+            this.filtList = this.ioList.filter(e => e.ioName.toLowerCase().includes(this.filter.toLowerCase()))
+          } else {
+            this.filtList = this.ioList
+          }
         } catch (err) {
           window.alert(err)
           console.log(err)
@@ -112,7 +124,7 @@
 
     async created() {
       this.loadPage()
-      setInterval( this.refreshData, 3 * 1000);
+      setInterval( this.refreshData, 1 * 1000);
     }
   }</script>
 

@@ -1,5 +1,2915 @@
 ﻿[
   {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T17:03:27.4313831+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T17:03:27.405431+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T17:03:23.5694514+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T17:03:23.5459005+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T17:03:22.0857722+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T17:03:22.0614698+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T17:03:21.0651005+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T17:03:21.0396865+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T17:03:19.1199084+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T17:03:19.0945956+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T17:03:16.6357713+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T17:03:16.5760778+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T17:03:16.3393682+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T17:03:16.318301+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T17:03:15.9958934+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T17:03:15.9721446+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T17:03:14.7249787+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T17:03:14.7003027+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T17:03:13.3993279+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T17:03:13.373489+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T17:03:12.7637497+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T17:03:12.7396283+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T17:03:12.6579005+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T17:03:12.6348452+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T17:03:09.0876803+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T17:03:09.0638057+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T17:02:57.1088725+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T17:02:57.0832105+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T17:02:55.9772015+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T17:02:55.9498823+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T17:02:48.3023381+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T17:02:48.2768694+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T17:02:47.1135073+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T17:02:47.0894125+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T17:02:46.8685124+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T17:02:46.8444807+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T17:02:45.9333025+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T17:02:45.9107006+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T17:02:45.3248933+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T17:02:45.3018294+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T17:02:44.3113282+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T17:02:44.2841097+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T17:02:43.5828105+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T17:02:43.5580269+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T17:02:42.7900461+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T17:02:42.7395452+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T17:02:41.9497838+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T17:02:41.9275778+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T17:02:40.4435847+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T17:02:40.4157756+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T17:02:39.5965174+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T17:02:39.5698183+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T17:02:37.6550453+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T17:02:37.6271532+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T17:02:37.0184687+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T17:02:36.9923965+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T17:02:36.7380854+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T17:02:36.693748+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T17:00:48.1189561+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T17:00:48.0573722+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T17:00:47.9681886+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T17:00:47.9400052+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T17:00:47.8613591+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T17:00:47.8302557+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T17:00:29.9507031+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T17:00:29.9256407+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T17:00:29.1348599+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T17:00:29.1041263+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T16:59:57.1015197+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T16:59:57.0773561+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T16:59:56.986389+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T16:59:56.9604096+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T16:59:56.4834968+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T16:59:56.4589219+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T16:59:55.353678+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T16:59:55.330787+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T16:59:55.2435325+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T16:59:55.2202098+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T16:59:54.8688098+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T16:59:54.8391053+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T16:59:54.7474602+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T16:59:54.7211047+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T16:59:53.3239552+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T16:59:53.3028676+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T16:59:52.1071755+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T16:59:52.0820687+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T16:59:51.867085+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T16:59:51.8431769+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T16:59:50.9425373+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T16:59:50.916712+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T16:59:50.2346698+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T16:59:50.208126+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T16:59:49.4128589+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T16:59:49.389295+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T16:59:48.597592+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T16:59:48.5749963+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T16:59:47.3567881+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T16:59:47.3301408+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T16:59:46.7449991+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T16:59:46.7204498+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T16:59:46.182435+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T16:59:46.1569937+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T16:59:46.0713577+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T16:59:46.0361685+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T16:59:45.9402373+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T16:59:45.9077998+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T16:59:45.623683+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T16:59:45.5883202+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T16:52:57.5491454+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T16:52:57.5270959+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T16:52:53.7498768+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T16:52:53.7262644+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T16:52:53.6229719+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T16:52:53.598236+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T16:52:48.6992747+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T16:52:48.6729852+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T16:52:30.4067661+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T16:52:30.3846693+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T16:52:29.6645827+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T16:52:29.6282141+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T16:52:11.0663025+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T16:52:11.0418779+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T16:52:02.9885866+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T16:52:02.9612959+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T16:52:02.86571+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T16:52:02.839268+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T16:52:02.7458246+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T16:52:02.7222834+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T16:51:58.4966176+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T16:51:58.473089+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T16:51:58.3722244+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T16:51:58.3480096+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T16:51:58.0654105+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T16:51:58.0379132+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T16:51:57.1472953+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T16:51:57.1153561+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T16:51:56.742004+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T16:51:56.7201233+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T16:51:56.6278916+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T16:51:56.6049153+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T16:51:55.6052982+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T16:51:55.5795912+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T16:51:55.1972881+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T16:51:55.1692561+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T16:51:54.5772593+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T16:51:54.5557167+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T16:51:52.6108676+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T16:51:52.5857358+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T16:51:51.4653373+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T16:51:51.4405133+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T16:51:51.3392777+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T16:51:51.3145145+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T16:51:48.6056423+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T16:51:48.5797278+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T16:51:48.0302897+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T16:51:48.0020949+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T16:51:47.5162926+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T16:51:47.4887414+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T16:51:46.3202597+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T16:51:46.2867163+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T16:51:45.6717558+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T16:51:45.6468209+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T16:51:45.1587078+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T16:51:45.1278427+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T16:51:44.4745715+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T16:51:44.4490022+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T16:51:39.0861744+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T16:51:39.059597+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T16:51:24.2131403+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T16:51:24.1838129+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T16:51:08.8784764+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T16:51:08.8513495+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T16:50:59.1052015+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T16:50:59.0722486+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T16:50:58.9863617+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T16:50:58.9652935+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T16:50:58.884963+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T16:50:58.8521818+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T16:50:57.9726622+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T16:50:57.9510064+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T16:50:57.8602663+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T16:50:57.8308706+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T16:50:57.4335682+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T16:50:57.4040611+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T16:50:56.9933005+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T16:50:56.9549938+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T16:50:56.8763323+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T16:50:56.8549825+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T16:50:56.7591997+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T16:50:56.7242273+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T16:50:54.1820646+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T16:50:54.1479296+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T16:46:41.217185+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T16:46:41.1819657+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T16:45:00.310641+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T16:45:00.2380797+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T16:44:40.1513367+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T16:44:40.1247337+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T16:44:39.021193+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T16:44:38.9937533+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T16:44:17.4206766+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T16:44:17.3857747+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T16:40:54.0048375+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T16:40:53.9797063+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T16:40:49.7086995+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T16:40:49.6870163+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T16:40:49.609038+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T16:40:49.5838977+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T16:40:49.4916478+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T16:40:49.467222+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T16:40:48.1931642+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T16:40:48.1690121+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T16:40:47.3667311+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T16:40:47.3433538+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T16:40:46.9190792+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T16:40:46.8983318+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T16:40:46.7314601+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T16:40:46.7104164+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T16:40:46.6378056+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T16:40:46.6156145+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T16:40:46.5431942+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T16:40:46.5247639+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T16:40:45.9303478+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T16:40:45.911984+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T16:40:45.8422109+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T16:40:45.8222753+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T16:40:45.7482475+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T16:40:45.7285469+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T16:40:45.2697925+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T16:40:45.2497499+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T16:40:45.1778173+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T16:40:45.1580502+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T16:40:45.0846008+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T16:40:45.0603548+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T16:40:44.3633873+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T16:40:44.3431166+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T16:40:44.2605509+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T16:40:44.2358929+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T16:40:43.8429118+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T16:40:43.819065+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T16:40:43.7385382+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T16:40:43.7118147+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T16:40:42.4355576+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T16:40:42.4061398+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T16:40:42.3272224+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T16:40:42.3044145+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T16:40:41.4154627+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T16:40:41.3904169+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T16:40:41.3016196+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T16:40:41.2767022+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T16:40:36.009301+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T16:40:35.9853201+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T16:40:34.9153182+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T16:40:34.8852251+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T16:27:33.3298108+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T16:27:33.3119614+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T16:27:32.9236497+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T16:27:32.9038802+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T16:27:32.5998789+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T16:27:32.5795878+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T16:27:32.2005985+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T16:27:32.182831+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T16:27:31.7571466+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T16:27:31.7379819+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T16:27:31.3084894+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T16:27:31.289311+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T16:27:28.4124261+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T16:27:28.3929336+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T16:27:23.8070018+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T16:27:23.7864649+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T16:26:54.7090601+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "AddressNo": "0",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T16:26:54.6836621+08:00"
+  },
+  {
+    "NodeName": "CTU",
+    "AddressNo": "1",
+    "Controller": "CTU_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T15:55:47.0521145+08:00"
+  },
+  {
+    "NodeName": "CTU",
+    "AddressNo": "1",
+    "Controller": "CTU_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T15:55:47.0243356+08:00"
+  },
+  {
+    "NodeName": "CTU",
+    "AddressNo": "1",
+    "Controller": "CTU_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T11:29:28.0715369+08:00"
+  },
+  {
+    "NodeName": "CTU",
+    "AddressNo": "1",
+    "Controller": "CTU_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T11:29:28.0392257+08:00"
+  },
+  {
+    "NodeName": "CTU",
+    "AddressNo": "1",
+    "Controller": "CTU_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T11:24:05.9854367+08:00"
+  },
+  {
+    "NodeName": "CTU",
+    "AddressNo": "1",
+    "Controller": "CTU_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T11:24:05.9643821+08:00"
+  },
+  {
+    "NodeName": "CTU",
+    "AddressNo": "1",
+    "Controller": "CTU_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T11:23:03.1888088+08:00"
+  },
+  {
+    "NodeName": "CTU",
+    "AddressNo": "1",
+    "Controller": "CTU_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T11:23:03.1530257+08:00"
+  },
+  {
+    "NodeName": "CTU",
+    "AddressNo": "1",
+    "Controller": "CTU_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T11:19:33.6213892+08:00"
+  },
+  {
+    "NodeName": "CTU",
+    "AddressNo": "1",
+    "Controller": "CTU_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T11:19:33.5889693+08:00"
+  },
+  {
+    "NodeName": "CTU",
+    "AddressNo": "1",
+    "Controller": "CTU_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T11:17:07.0759026+08:00"
+  },
+  {
+    "NodeName": "CTU",
+    "AddressNo": "1",
+    "Controller": "CTU_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T11:17:00.5278252+08:00"
+  },
+  {
+    "NodeName": "CTU",
+    "AddressNo": "1",
+    "Controller": "CTU_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T11:10:38.5729507+08:00"
+  },
+  {
+    "NodeName": "CTU",
+    "AddressNo": "1",
+    "Controller": "CTU_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T11:10:35.131344+08:00"
+  },
+  {
+    "NodeName": "CTU",
+    "AddressNo": "1",
+    "Controller": "CTU_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T11:10:21.6774681+08:00"
+  },
+  {
+    "NodeName": "CTU",
+    "AddressNo": "1",
+    "Controller": "CTU_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T11:10:21.6445374+08:00"
+  },
+  {
+    "NodeName": "CTU",
+    "AddressNo": "1",
+    "Controller": "CTU_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T11:02:11.0022855+08:00"
+  },
+  {
+    "NodeName": "CTU",
+    "AddressNo": "1",
+    "Controller": "CTU_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T11:00:39.5587664+08:00"
+  },
+  {
+    "NodeName": "CTU",
+    "AddressNo": "1",
+    "Controller": "CTU_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-20T10:57:53.8993632+08:00"
+  },
+  {
     "NodeName": "CTU",
     "AddressNo": "1",
     "Controller": "CTU_CONTROLLER",

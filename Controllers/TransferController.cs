@@ -23,6 +23,7 @@ namespace sandalphon.Controllers
             public string mode { get; set; }
             public string station { get; set; }
             public string direction { get; set; }
+            public string slot { get; set; }
         }
         [HttpPost("[action]")]
 
@@ -36,6 +37,7 @@ namespace sandalphon.Controllers
             param.Add("@Mode", req.mode);
             param.Add("@Station", req.station);
             param.Add("@Direction", req.direction);
+            param.Add("@Slot", req.slot);
             TaskFlowManagement.Excute(Guid.NewGuid().ToString(), (TaskFlowManagement.Command)Enum.Parse(typeof(TaskFlowManagement.Command), req.name), param);
 
             var result = new
@@ -126,9 +128,7 @@ namespace sandalphon.Controllers
         [HttpGet("[action]")]
         public IActionResult IO_List()
         {
-
-            //var nodeList = ioList.Select(o => o.node).Distinct();
-            SpinWait.SpinUntil(() => TaskFlowManagement.Excute(Guid.NewGuid().ToString(), TaskFlowManagement.Command.GET_IO).Finished, 5000);
+            TaskFlowManagement.Excute(Guid.NewGuid().ToString(), TaskFlowManagement.Command.GET_IO).Wait();
 
             List<RELIO> tmp = NodeManagement.Get("CTU").DIO.Values.ToList();
             var result = new

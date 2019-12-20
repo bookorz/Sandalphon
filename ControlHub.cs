@@ -133,20 +133,27 @@ namespace sandalphon
 
         public void On_TaskJob_Aborted(TaskFlowManagement.CurrentProcessTask Task, string NodeName, string ReportType, string Message)
         {
-            
-            Startup.GlobalHub.InvokeOnAllAsync("On_TaskJob_Aborted", new { Task });
+            if (Task.TaskName != TaskFlowManagement.Command.SET_IO)
+            {
+                Startup.GlobalHub.InvokeOnAllAsync("On_TaskJob_Aborted", new { Task });
+            }
         }
 
         public void On_TaskJob_Ack(TaskFlowManagement.CurrentProcessTask Task)
         {
 
-
-            Startup.GlobalHub.InvokeOnAllAsync("On_TaskJob_Ack", new { Task });
+            if (Task.TaskName != TaskFlowManagement.Command.SET_IO)
+            {
+                Startup.GlobalHub.InvokeOnAllAsync("On_TaskJob_Ack", new { Task });
+            }
         }
 
         public void On_TaskJob_Finished(TaskFlowManagement.CurrentProcessTask Task)
         {
-            Startup.GlobalHub.InvokeOnAllAsync("On_TaskJob_Finished", new { Task });
+            if (Task.TaskName != TaskFlowManagement.Command.SET_IO)
+            {
+                Startup.GlobalHub.InvokeOnAllAsync("On_TaskJob_Finished", new { Task });
+            }
         }
 
         public Node GetNode(string Name)
