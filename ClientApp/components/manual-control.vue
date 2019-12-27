@@ -53,7 +53,7 @@
               </b-col>
               <b-col sm="3">
                 <b-form-checkbox v-model="form.light_curtain" @change="RunTask('LIGHT_CURTAIN_ENABLED')" switch>
-                  Enabled
+                  {{form.light_curtain?'Enabled':'Disabled'}}
                 </b-form-checkbox>
               </b-col>
 
@@ -173,11 +173,11 @@
               </b-row>
             </b-form-group>
           </b-card>
-          <b-card title="Path" bg-variant="dark" text-variant="white" sub-title="" class=" col-3">
-            <b-form-radio-group id="radio-group-8"
-                                v-model="form.Path"
-                                :options="Paths"
-                                name="radio-options4"></b-form-radio-group>
+          <b-card title="Control Mode" bg-variant="dark" text-variant="white" sub-title="" class=" col-3">
+
+            <b-form-checkbox v-model="Online" @change="RunTask('CONTROL_MODE')" switch size="lg">
+              {{Online?'Online':'Offline'}}
+            </b-form-checkbox>
           </b-card>
         </b-card-group>
 
@@ -315,13 +315,24 @@
           </b-card>
         </b-card-group>
         <b-card title="CTU Access PTZ Command" bg-variant="dark" text-variant="white" sub-title="">
-
-          <b-form-group label="Position">
-            <b-form-radio-group id="radio-group-1"
-                                v-model="form.Position"
-                                :options="Positions"
-                                name="radio-options"></b-form-radio-group>
-          </b-form-group>
+          <b-row>
+            <b-col sm="6">
+              <b-form-group label="Position">
+                <b-form-radio-group id="radio-group-1"
+                                    v-model="form.Position"
+                                    :options="Positions"
+                                    name="radio-options"></b-form-radio-group>
+              </b-form-group>
+            </b-col>
+            <b-col sm="6">
+              <b-form-group label="Path">
+                <b-form-radio-group id="radio-group-8"
+                                    v-model="form.Path"
+                                    :options="Paths"
+                                    name="radio-options4"></b-form-radio-group>
+              </b-form-group>
+            </b-col>
+          </b-row>
           <b-form-group label="Direction">
             <b-form-radio-group id="radio-group-2"
                                 v-model="form.Direction"
@@ -411,7 +422,12 @@
           { text: 'Face To Back', value: '2' },
           { text: 'Back To Face', value: '3' }
         ],
-        alarm_message: { nodeName: '', errorCode: '', errorDesc: '' }
+        Mode: [
+          { text: 'Online', value: true },
+          { text: 'Offline', value: false }
+        ],
+        alarm_message: { nodeName: '', errorCode: '', errorDesc: '' },
+        Online: false
       }
     },
 
@@ -443,9 +459,9 @@
     },
     methods: {
       ...mapActions(['setForm']),
-      async GetNodeList() {
-        let response = await this.$http.get('/api/Transfer/NodeInfoList')
-        this.nodeList = response.data.msg
+      async GetOnline() {
+        let response = await this.$http.get('/api/Transfer/GetOnline')
+        this.Online = response.data.online
       },
       RunTask(TaskName) {
         var target = ''
@@ -457,9 +473,11 @@
         var val2 = ''
 
         switch (TaskName) {
-
+          case 'CONTROL_MODE':
+            value = !this.Online ? '1' : '0'
+            break;
           case 'LIGHT_CURTAIN_ENABLED':
-            value = !this.form.light_curtain ? '1' :'0'
+            value = !this.form.light_curtain ? '1' : '0'
             break;
           case 'FOUPROBOT_SET_SPEED':
             value = this.form.foup_robot_speed
@@ -563,35 +581,40 @@
       },
       On_TaskJob_Finished(data) {
         this.spinnerStatus = false
-      },
-      On_TaskJob_Aborted(data) {
-        this.spinnerStatus = false
-      },
-      On_Alarm_Happen(data) {
-        this.alarm_message = data[0].alarm
-        this.$bvModal.show('alarm_modal')
-      }
-    },
-
-    mounted() {
-      this.GetNodeList()
-    },
-
-    created() {
-      this.$signalrHub.$on('On_TaskJob_Ack', this.On_TaskJob_Ack)
-      this.$signalrHub.$on('On_TaskJob_Finished', this.On_TaskJob_Finished)
-      this.$signalrHub.$on('On_TaskJob_Aborted', this.On_TaskJob_Aborted)
-      this.$signalrHub.$on('On_Alarm_Happen', this.On_Alarm_Happen)
-    },
-    beforeDestroy() {
-      // Make sure to cleanup SignalR event handlers when removing the component
-      this.$signalrHub.$off('On_TaskJob_Ack', this.On_TaskJob_Ack)
-      this.$signalrHub.$off('On_TaskJob_Finished', this.On_TaskJob_Finished)
-      this.$signalrHub.$off('On_TaskJob_Aborted', this.On_TaskJob_Aborted)
-      this.$signalrHub.$off('On_Alarm_Happen', this.On_Alarm_Happen)
-
-      //this.setForm({ form: this.form })
+        switch (data[0].task.taskName) {
+          case 157:
+            this.GetOnline()
+            break;
     }
+  },
+  On_TaskJob_Aborted(data) {
+    this.spinnerStatus = false
+  },
+  On_Alarm_Happen(data) {
+    this.alarm_message = data[0].alarm
+    this.$bvModal.show('alarm_modal')
+  }
+    },
+
+  mounted() {
+    this.GetOnline()
+  },
+
+  created() {
+    this.$signalrHub.$on('On_TaskJob_Ack', this.On_TaskJob_Ack)
+    this.$signalrHub.$on('On_TaskJob_Finished', this.On_TaskJob_Finished)
+    this.$signalrHub.$on('On_TaskJob_Aborted', this.On_TaskJob_Aborted)
+    this.$signalrHub.$on('On_Alarm_Happen', this.On_Alarm_Happen)
+  },
+  beforeDestroy() {
+    // Make sure to cleanup SignalR event handlers when removing the component
+    this.$signalrHub.$off('On_TaskJob_Ack', this.On_TaskJob_Ack)
+    this.$signalrHub.$off('On_TaskJob_Finished', this.On_TaskJob_Finished)
+    this.$signalrHub.$off('On_TaskJob_Aborted', this.On_TaskJob_Aborted)
+    this.$signalrHub.$off('On_Alarm_Happen', this.On_Alarm_Happen)
+
+    //this.setForm({ form: this.form })
+  }
   }
 </script>
 

@@ -128,12 +128,29 @@ namespace sandalphon.Controllers
         [HttpGet("[action]")]
         public IActionResult IO_List()
         {
+            
             TaskFlowManagement.Excute(Guid.NewGuid().ToString(), TaskFlowManagement.Command.GET_IO).Wait();
 
-            List<RELIO> tmp = NodeManagement.Get("CTU").DIO.Values.ToList();
+            // List<RELIO> tmp = NodeManagement.Get("CTU").DIO.Values.ToList();
+            lock (TransferControl.Instance.DIO)
+            {
+                var result = new
+                {
+                    ioList = TransferControl.Instance.DIO.Values.ToList()
+                };
+
+                return Ok(result);
+            }
+        }
+        [HttpGet("[action]")]
+        public IActionResult GetOnline()
+        {
+            //TaskFlowManagement.Excute(Guid.NewGuid().ToString(), TaskFlowManagement.Command.GET_IO).Wait();
+
+            // List<RELIO> tmp = NodeManagement.Get("CTU").DIO.Values.ToList();
             var result = new
             {
-                ioList = tmp
+                Online = TransferControl.Instance.GetOnline()
             };
 
             return Ok(result);

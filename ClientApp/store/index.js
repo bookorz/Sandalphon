@@ -47,7 +47,7 @@ const mutations = {
     // window.localStorage.setItem('form', JSON.stringify(obj.form))
   },
   [MAIN_SET_ISLOGIN] (form, obj) {
-    state.isLogin = obj
+    state.isLogin = obj.isLogin
     // window.localStorage.setItem('form', JSON.stringify(obj.form))
   }
 }

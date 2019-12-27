@@ -1,11 +1,9 @@
-{
-  "DBConnectionString": "server=127.0.0.1;port=3307;user id=sanwa;password=sanwa_adam;database=adam",
+﻿{
   "OCR1ImgSourcePath": "C:/ProgramData/e-Reader/AllImage",
   "OCR1ImgToJpgPath": "D:/OCR01/JPG",
   "OCR2ImgSourcePath": "C:/ProgramData/e-Reader/AllImage",
   "OCR2ImgToJpgPath": "C:/ProgramData/e-Reader/JPG",
   "SystemMode": "SANDALPHON-WTS",
-  "SystemMode1": "SHAMSHEL-1R1A3P1L",
   "OCR1ExePath": "C:/Program Files (x86)/Cognex/In-Sight/In-Sight Explorer Wafer 4.5.0/WaferID.exe",
   "OCR2ExePath": "C:/Program Files (x86)/HST Vision/e-Reader8000/VB9BReaderForm.exe",
   "MappingData": "111111111111111111111111",
@@ -17,7 +15,14 @@
   "CurrentRecipe": "default",
   "EquipmentID": "SORT",
   "FoupTxfLogPath": "D:/log/foup",
+  "NoticeInitFin": null,
+  "NoticeProcFin": null,
   "MappingDataCheck": false,
   "DummyMappingData": false,
-  "TaskFlow": "WTS"
+  "PreMapping": false,
+  "TaskFlow": "WTS",
+  "FakeDataP1": null,
+  "FakeDataP2": null,
+  "FakeDataP3": null,
+  "ControlOnline": true
 }

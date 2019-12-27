@@ -82,7 +82,7 @@
       }
     },
     methods: {
-      ...mapActions(['setForm']),
+      ...mapActions(['setForm','setIsLogin']),
       toggleCollapsed: function (event) {
         this.collapsed = !this.collapsed
       },
@@ -93,7 +93,7 @@
         this.$router.push('/login');
       },
       logout() {
-        this.form.isLogin = false
+        this.setIsLogin({ isLogin: false })
         this.$router.push('/');
       }
     },

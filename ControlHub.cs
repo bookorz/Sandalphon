@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using ControlService.CommandConvert;
+using ControlService.Config;
 using ControlService.Engine;
 using ControlService.Management;
 
@@ -13,9 +14,9 @@ namespace sandalphon
         public ControlHub()
         {
             SECSInterface SECS = new SECSInterface(this);
-            RouteControl control = new RouteControl(SECS);
-            
-            control.ConnectAll();
+            TransferControl control = new TransferControl(SECS);
+
+            control.SetOnline(SystemConfig.Get().ControlOnline);
         }
 
         public void NewTask(string Id, TaskFlowManagement.Command TaskName, Dictionary<string, string> param = null)

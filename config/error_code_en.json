@@ -15080,6 +15080,14 @@
     "ALTX": "COMM_ERR_CTU_PTZ"
   },
   {
+    "Controller": "SYSTEM",
+    "NodeName": "SYSTEM",
+    "ErrorCode": "2632",
+    "ErrorDesc": "Control mode is offline now",
+    "ALID": "2632",
+    "ALTX": "CONTROL_MODE_OFFLINE"
+  },
+  {
     "Controller": "STK_CONTROLLER",
     "NodeName": "ELPT2",
     "ErrorCode": "98801000",

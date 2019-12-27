@@ -239,6 +239,13 @@
   },
   {
     "node": "CTU",
+    "ioNo": 4017,
+    "ioName": "PTZ-Present",
+    "ioDesc": "PTZ present sensor",
+    "ioType": "IN"
+  },
+  {
+    "node": "CTU",
     "ioNo": 3401,
     "ioName": "PTZ-CTRL-Clean",
     "ioDesc": "PTZ Carrier Clean path control",
@@ -260,42 +267,49 @@
   },
   {
     "node": "CTU",
-    "ioNo": 1113,
+    "ioNo": 11113,
     "ioName": "ALI-Arm-POS-Hold",
     "ioDesc": "Support Arm Hold Sensor",
     "ioType": "IN"
   },
   {
     "node": "CTU",
-    "ioNo": 1114,
+    "ioNo": 11114,
     "ioName": "ALI-Arm-POS-Release",
     "ioDesc": "Support Arm Release Sensor",
     "ioType": "IN"
   },
   {
     "node": "CTU",
-    "ioNo": 1213,
+    "ioNo": 11213,
     "ioName": "ALI-NF-POS-Hold",
     "ioDesc": "Notch Finder Hold Sensor",
     "ioType": "IN"
   },
   {
     "node": "CTU",
-    "ioNo": 1214,
+    "ioNo": 11214,
     "ioName": "ALI-NF-POS-Release",
     "ioDesc": "Notch Finder Release Sensor",
     "ioType": "IN"
   },
   {
     "node": "CTU",
-    "ioNo": 1112,
+    "ioNo": 11112,
     "ioName": "ALI-Inform-CDA",
     "ioDesc": "CDA Gauge",
     "ioType": "IN"
   },
   {
     "node": "CTU",
-    "ioNo": 1212,
+    "ioNo": 11211,
+    "ioName": "ALI-Present",
+    "ioDesc": "Aliner present sensor",
+    "ioType": "IN"
+  },
+  {
+    "node": "CTU",
+    "ioNo": 11212,
     "ioName": "ALI-Inform-FAN",
     "ioDesc": "Robot Fan1(FAN1)",
     "ioType": "IN"
