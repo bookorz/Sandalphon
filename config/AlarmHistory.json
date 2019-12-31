@@ -2,6 +2,177 @@
   {
     "NodeName": "",
     "Controller": "STK_CONTROLLER",
+    "ErrorCode": "010000BB",
+    "ErrorDesc": "Error code not exist",
+    "ALID": "",
+    "ALTX": "",
+    "TimeStamp": "2019-12-31T16:23:01.2768805+08:00"
+  },
+  {
+    "NodeName": "",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "010000BB",
+    "ErrorDesc": "Error code not exist",
+    "ALID": "",
+    "ALTX": "",
+    "TimeStamp": "2019-12-31T16:21:26.9035358+08:00"
+  },
+  {
+    "NodeName": "",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "010000BB",
+    "ErrorDesc": "Error code not exist",
+    "ALID": "",
+    "ALTX": "",
+    "TimeStamp": "2019-12-31T16:19:52.3390469+08:00"
+  },
+  {
+    "NodeName": "ELPT1",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-31T16:17:08.4788155+08:00"
+  },
+  {
+    "NodeName": "Stocker",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "84801000",
+    "ErrorDesc": "Command Executing",
+    "ALID": "1318",
+    "ALTX": "STOCKER UNKNOWN ERROR",
+    "TimeStamp": "2019-12-31T16:05:48.5740561+08:00"
+  },
+  {
+    "NodeName": "SHELF",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-31T16:05:48.1922155+08:00"
+  },
+  {
+    "NodeName": "SHELF",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-31T16:05:48.1663787+08:00"
+  },
+  {
+    "NodeName": "Stocker",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "84801000",
+    "ErrorDesc": "Command Executing",
+    "ALID": "1318",
+    "ALTX": "STOCKER UNKNOWN ERROR",
+    "TimeStamp": "2019-12-31T16:05:48.5740561+08:00"
+  },
+  {
+    "NodeName": "SHELF",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-31T16:05:42.5567265+08:00"
+  },
+  {
+    "NodeName": "SHELF",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-31T16:05:42.5416753+08:00"
+  },
+  {
+    "NodeName": "Stocker",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "84801000",
+    "ErrorDesc": "Command Executing",
+    "ALID": "1318",
+    "ALTX": "STOCKER UNKNOWN ERROR",
+    "TimeStamp": "2019-12-31T16:05:48.5740561+08:00"
+  },
+  {
+    "NodeName": "Stocker",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "84801000",
+    "ErrorDesc": "Command Executing",
+    "ALID": "1318",
+    "ALTX": "STOCKER UNKNOWN ERROR",
+    "TimeStamp": "2019-12-31T16:05:48.5740561+08:00"
+  },
+  {
+    "NodeName": "SHELF",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-31T16:05:08.2473396+08:00"
+  },
+  {
+    "NodeName": "SHELF",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-31T16:05:08.2246902+08:00"
+  },
+  {
+    "NodeName": "Stocker",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "83860000",
+    "ErrorDesc": "No Tag Error",
+    "ALID": "1318",
+    "ALTX": "STOCKER UNKNOWN ERROR",
+    "TimeStamp": "2019-12-31T15:36:34.0411329+08:00"
+  },
+  {
+    "NodeName": "ELPT2",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-31T09:52:04.3259975+08:00"
+  },
+  {
+    "NodeName": "ELPT2",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-31T09:52:04.2929582+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-31T09:28:26.7003316+08:00"
+  },
+  {
+    "NodeName": "FOUP_ROBOT",
+    "Controller": "STK_CONTROLLER",
+    "ErrorCode": "ConnectionError",
+    "ErrorDesc": "Caused by abnormal connection, please check the cable to troubleshoot the problem.",
+    "ALID": null,
+    "ALTX": null,
+    "TimeStamp": "2019-12-31T09:28:26.6659555+08:00"
+  },
+  {
+    "NodeName": "",
+    "Controller": "STK_CONTROLLER",
     "ErrorCode": "NMEIO",
     "ErrorDesc": "Error code not exist",
     "ALID": "",
