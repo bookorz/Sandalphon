@@ -2,7 +2,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import ManualControl from 'components/manual-control'
 import AlarmHistory from 'components/alarm-history'
-import HomePage from 'components/home-page'
+// import HomePage from 'components/home-page'
 import About from 'components/about'
 import Login from 'components/login'
 import ioList from 'components/io-list'
@@ -11,7 +11,7 @@ Vue.use(VueRouter)
 
 let routes = [
   { name: 'login', path: '/login', component: Login },
-  { name: 'home', path: '/', component: HomePage },
+  { name: 'home', path: '/', component: About },
   { name: 'about', path: '/about', component: About },
   {
     name: 'manual-control',

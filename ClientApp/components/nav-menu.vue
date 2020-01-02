@@ -13,11 +13,11 @@
       <transition name="slide">
         <div :class="'collapse navbar-collapse' + (!collapsed ? ' show':'')" v-show="!collapsed">
           <ul class="navbar-nav">
-            <li class="nav-item" @click="collapsed=true">
+            <!--<li class="nav-item" @click="collapsed=true">
               <router-link to="/" exact-active-class="active">
                 <icon icon="desktop" class="mr-2 menu-icon" /><span>{{$t('nav.dashboard')}}</span>
               </router-link>
-            </li>
+            </li>-->
             <li class="nav-item" @click="collapsed=true">
               <router-link to="/about" exact-active-class="active">
                 <icon icon="info" class="mr-2 menu-icon" /><span>{{$t('nav.showlog')}}</span>
